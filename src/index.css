@@ -92,10 +92,9 @@ html {
 
 /* ===== PRINT / PDF STYLES ===== */
 @media print {
-  /* Reset page */
   @page {
     size: A4;
-    margin: 15mm 12mm 18mm 12mm;
+    margin: 15mm 14mm 20mm 14mm;
   }
 
   * {
@@ -105,12 +104,14 @@ html {
   }
 
   html {
-    font-size: 11pt;
+    font-size: 10.5pt;
+    line-height: 1.5;
   }
 
   body {
     background: white !important;
     color: #1a3a2a !important;
+    overflow: visible !important;
   }
 
   /* Hide non-print elements */
@@ -131,29 +132,81 @@ html {
   }
 
   /* Content area */
-  #pdf-content {
-    max-width: 100% !important;
-    padding: 0 !important;
-  }
-
+  #pdf-content,
   #pdf-content > div {
     max-width: 100% !important;
     padding: 0 !important;
+    overflow: visible !important;
   }
 
-  /* Sections - avoid breaks inside */
-  section {
+  /* === INDEX ITEMS - fix clipped text === */
+  #indice {
+    page-break-after: always;
+    break-after: always;
+  }
+
+  #indice a {
+    display: flex !important;
+    align-items: center !important;
+    padding: 10px 12px !important;
+    margin-bottom: 4px !important;
+    border-radius: 6px !important;
+    border: 1px solid #ddd !important;
+    background: #f8f6f2 !important;
+    overflow: visible !important;
     page-break-inside: avoid;
     break-inside: avoid;
+    line-height: 1.6 !important;
+    min-height: auto !important;
   }
 
-  /* Cards */
+  #indice a span {
+    overflow: visible !important;
+    text-overflow: unset !important;
+    white-space: normal !important;
+    line-height: 1.6 !important;
+  }
+
+  /* === SECTIONS - allow break inside but keep cards intact === */
+  section {
+    page-break-inside: auto;
+    break-inside: auto;
+    overflow: visible !important;
+  }
+
+  /* Cards - allow break but keep header with first content */
   [class*="bg-card"] {
     background: #f8f6f2 !important;
     border: 1px solid #ddd !important;
     box-shadow: none !important;
-    padding: 16px !important;
-    margin-bottom: 10px !important;
+    padding: 14px !important;
+    margin-bottom: 12px !important;
+    page-break-inside: auto;
+    break-inside: auto;
+    overflow: visible !important;
+  }
+
+  /* Keep section header + first paragraph together */
+  .flex.items-center.gap-3.mb-6 {
+    page-break-after: avoid !important;
+    break-after: avoid !important;
+  }
+
+  /* Paragraphs, list items - avoid orphaned lines */
+  p, li {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* Lists */
+  ul, ol {
+    page-break-inside: auto;
+    break-inside: auto;
+  }
+
+  li {
+    page-break-inside: avoid;
+    break-inside: avoid;
   }
 
   /* Tables */
@@ -162,6 +215,11 @@ html {
     width: 100% !important;
     border-collapse: collapse !important;
     page-break-inside: auto;
+    break-inside: auto;
+  }
+
+  thead {
+    display: table-header-group;
   }
 
   tr {
@@ -186,6 +244,7 @@ html {
   [class*="border-l-4"] {
     page-break-inside: avoid;
     break-inside: avoid;
+    overflow: visible !important;
   }
 
   /* Grid layouts for print */
@@ -194,7 +253,9 @@ html {
   }
 
   [class*="grid"] > * {
-    margin-bottom: 8px !important;
+    margin-bottom: 6px !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
   }
 
   /* Links */
@@ -205,36 +266,54 @@ html {
 
   /* Footer */
   footer {
-    page-break-before: always;
-  }
-
-  /* Headings */
-  h2, h3 {
-    page-break-after: avoid;
-    break-after: avoid;
-  }
-
-  /* Reduce spacing */
-  .py-12 {
-    padding-top: 12px !important;
-    padding-bottom: 12px !important;
-  }
-
-  .py-20 {
+    page-break-before: auto;
+    margin-top: 20px !important;
     padding-top: 16px !important;
     padding-bottom: 16px !important;
   }
 
+  /* Headings - keep with next content */
+  h2, h3 {
+    page-break-after: avoid !important;
+    break-after: avoid !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* Reduce spacing for print */
+  .py-12 {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+
+  .py-20 {
+    padding-top: 14px !important;
+    padding-bottom: 14px !important;
+  }
+
   .mb-6 {
-    margin-bottom: 10px !important;
+    margin-bottom: 8px !important;
   }
 
   .space-y-4 > * + * {
     margin-top: 8px !important;
   }
 
-  /* Scroll margin not needed */
   .scroll-mt-20 {
     scroll-margin-top: 0 !important;
+  }
+
+  /* Data info boxes */
+  [class*="rounded-lg"][class*="p-4"],
+  [class*="rounded-lg"][class*="p-3"] {
+    page-break-inside: avoid;
+    break-inside: avoid;
+    overflow: visible !important;
+  }
+
+  /* Checklist items */
+  .space-y-3 > * {
+    page-break-inside: avoid;
+    break-inside: avoid;
   }
 }
