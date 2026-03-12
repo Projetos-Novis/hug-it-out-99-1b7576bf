@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import { BookOpen, ChevronRight } from "lucide-react";
 import { sections } from "./camporiData";
+import { BookOpen } from "lucide-react";
 
 export function TableOfContents() {
   return (
@@ -21,9 +21,7 @@ export function TableOfContents() {
           </p>
         </motion.div>
 
-        {/* Índice visual (site) */}
         <motion.div
-          data-pdf-screen-index
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -49,19 +47,9 @@ export function TableOfContents() {
             </a>
           ))}
         </motion.div>
-
-        {/* Índice simples (somente PDF/print) */}
-        <div data-pdf-print-index className="hidden">
-          <h3 className="font-heading text-xl font-bold text-primary mb-3">Índice</h3>
-          <ol className="list-decimal pl-6 space-y-1">
-            {sections.map((section, i) => (
-              <li key={section.id} className="font-heading text-foreground">
-                {String(i + 1).padStart(2, "0")} — {section.title}
-              </li>
-            ))}
-          </ol>
-        </div>
       </div>
     </section>
   );
 }
+
+import { ChevronRight } from "lucide-react";

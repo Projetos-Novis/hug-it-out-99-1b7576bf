@@ -94,11 +94,7 @@ html {
 @media print {
   @page {
     size: A4;
-    margin: 15mm 14mm 15mm 14mm;
-  }
-
-  @page :first {
-    margin-top: 10mm;
+    margin: 15mm 14mm 20mm 14mm;
   }
 
   * {
@@ -143,45 +139,43 @@ html {
     overflow: visible !important;
   }
 
-  /* === INDEX (PDF) === */
+  /* === INDEX ITEMS - fix clipped text === */
   #indice {
     page-break-after: always;
     break-after: always;
   }
 
-  [data-pdf-screen-index] {
-    display: none !important;
-  }
-
-  [data-pdf-print-index] {
-    display: block !important;
-    margin-top: 8px !important;
-    margin-bottom: 10px !important;
-    page-break-inside: avoid;
-    break-inside: avoid;
-  }
-
-  [data-pdf-print-index] ol {
-    margin: 0 !important;
-    padding-left: 18px !important;
-  }
-
-  [data-pdf-print-index] li {
+  #indice a {
+    display: flex !important;
+    align-items: center !important;
+    padding: 10px 12px !important;
     margin-bottom: 4px !important;
-    line-height: 1.5 !important;
+    border-radius: 6px !important;
+    border: 1px solid #ddd !important;
+    background: #f8f6f2 !important;
+    overflow: visible !important;
     page-break-inside: avoid;
     break-inside: avoid;
+    line-height: 1.6 !important;
+    min-height: auto !important;
   }
 
-  /* === SECTIONS - allow break inside but keep cards readable === */
+  #indice a span {
+    overflow: visible !important;
+    text-overflow: unset !important;
+    white-space: normal !important;
+    line-height: 1.6 !important;
+  }
+
+  /* === SECTIONS - allow break inside but keep cards intact === */
   section {
     page-break-inside: auto;
     break-inside: auto;
     overflow: visible !important;
   }
 
-  /* Section card container only (avoid affecting table rows/classes with bg-card) */
-  section > div.bg-card {
+  /* Cards - allow break but keep header with first content */
+  [class*="bg-card"] {
     background: #f8f6f2 !important;
     border: 1px solid #ddd !important;
     box-shadow: none !important;
@@ -189,11 +183,6 @@ html {
     margin-bottom: 12px !important;
     page-break-inside: auto;
     break-inside: auto;
-    overflow: visible !important;
-  }
-
-  /* Prevent print clipping in horizontal wrappers */
-  .overflow-x-auto {
     overflow: visible !important;
   }
 
