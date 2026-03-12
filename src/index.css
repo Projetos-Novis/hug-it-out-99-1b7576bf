@@ -94,7 +94,11 @@ html {
 @media print {
   @page {
     size: A4;
-    margin: 15mm 14mm 20mm 14mm;
+    margin: 15mm 14mm 15mm 14mm;
+  }
+
+  @page :first {
+    margin-top: 10mm;
   }
 
   * {
