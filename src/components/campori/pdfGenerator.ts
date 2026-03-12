@@ -77,7 +77,7 @@ export async function generatePDF() {
   const opt = {
     margin: [5, 5, 10, 5] as [number, number, number, number],
     filename: "III-Campori-Lideres-APV-Orientacoes.pdf",
-    image: { type: "jpeg", quality: 0.95 },
+    image: { type: "jpeg" as const, quality: 0.95 },
     html2canvas: {
       scale: 2,
       useCORS: true,
