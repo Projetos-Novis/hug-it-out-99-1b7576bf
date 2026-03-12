@@ -139,43 +139,45 @@ html {
     overflow: visible !important;
   }
 
-  /* === INDEX ITEMS - fix clipped text === */
+  /* === INDEX (PDF) === */
   #indice {
     page-break-after: always;
     break-after: always;
   }
 
-  #indice a {
-    display: flex !important;
-    align-items: center !important;
-    padding: 10px 12px !important;
-    margin-bottom: 4px !important;
-    border-radius: 6px !important;
-    border: 1px solid #ddd !important;
-    background: #f8f6f2 !important;
-    overflow: visible !important;
+  [data-pdf-screen-index] {
+    display: none !important;
+  }
+
+  [data-pdf-print-index] {
+    display: block !important;
+    margin-top: 8px !important;
+    margin-bottom: 10px !important;
     page-break-inside: avoid;
     break-inside: avoid;
-    line-height: 1.6 !important;
-    min-height: auto !important;
   }
 
-  #indice a span {
-    overflow: visible !important;
-    text-overflow: unset !important;
-    white-space: normal !important;
-    line-height: 1.6 !important;
+  [data-pdf-print-index] ol {
+    margin: 0 !important;
+    padding-left: 18px !important;
   }
 
-  /* === SECTIONS - allow break inside but keep cards intact === */
+  [data-pdf-print-index] li {
+    margin-bottom: 4px !important;
+    line-height: 1.5 !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* === SECTIONS - allow break inside but keep cards readable === */
   section {
     page-break-inside: auto;
     break-inside: auto;
     overflow: visible !important;
   }
 
-  /* Cards - allow break but keep header with first content */
-  [class*="bg-card"] {
+  /* Section card container only (avoid affecting table rows/classes with bg-card) */
+  section > div.bg-card {
     background: #f8f6f2 !important;
     border: 1px solid #ddd !important;
     box-shadow: none !important;
@@ -183,6 +185,11 @@ html {
     margin-bottom: 12px !important;
     page-break-inside: auto;
     break-inside: auto;
+    overflow: visible !important;
+  }
+
+  /* Prevent print clipping in horizontal wrappers */
+  .overflow-x-auto {
     overflow: visible !important;
   }
 
