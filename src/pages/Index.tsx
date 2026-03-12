@@ -1,4 +1,5 @@
 import { HeroSection } from "@/components/campori/HeroSection";
+import { IntroSection } from "@/components/campori/IntroSection";
 import { TableOfContents } from "@/components/campori/TableOfContents";
 import { SidebarNav } from "@/components/campori/SidebarNav";
 import { ContentSections } from "@/components/campori/ContentSections";
@@ -39,6 +40,7 @@ const Index = () => {
           </div>
 
           <div className="max-w-4xl mx-auto px-3 sm:px-4 md:px-8">
+            <IntroSection />
             <TableOfContents />
             <ContentSections />
 
