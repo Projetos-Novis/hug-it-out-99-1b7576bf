@@ -7,33 +7,39 @@ import { BackToTop } from "@/components/campori/UIComponents";
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      <SidebarNav />
+      <div data-pdf-hide="sidebar">
+        <SidebarNav />
+      </div>
 
-      <div className="lg:ml-72">
-        <div id="hero">
-          <HeroSection />
-        </div>
+      <div id="pdf-wrapper" className="lg:ml-72">
+        <div id="pdf-content">
+          <div id="hero">
+            <HeroSection />
+          </div>
 
-        <div className="max-w-4xl mx-auto px-4 md:px-8">
-          <TableOfContents />
-          <ContentSections />
+          <div className="max-w-4xl mx-auto px-4 md:px-8">
+            <TableOfContents />
+            <ContentSections />
 
-          {/* Footer */}
-          <footer className="py-16 mt-12 border-t border-border text-center">
-            <p className="font-heading text-lg font-bold text-primary mb-1">
-              III Campori de Líderes – APV
-            </p>
-            <p className="text-muted-foreground text-sm">
-              Associação Paulista do Vale · 09 a 12 de outubro de 2026 · Catre, Analândia-SP
-            </p>
-            <p className="text-muted-foreground text-xs mt-2 font-heading font-semibold tracking-wide uppercase">
-              Tema: Íntegros
-            </p>
-          </footer>
+            {/* Footer */}
+            <footer className="py-16 mt-12 border-t border-border text-center">
+              <p className="font-heading text-lg font-bold text-primary mb-1">
+                III Campori de Líderes – APV
+              </p>
+              <p className="text-muted-foreground text-sm">
+                Associação Paulista do Vale · 09 a 12 de outubro de 2026 · Catre, Analândia-SP
+              </p>
+              <p className="text-muted-foreground text-xs mt-2 font-heading font-semibold tracking-wide uppercase">
+                Tema: Íntegros
+              </p>
+            </footer>
+          </div>
         </div>
       </div>
 
-      <BackToTop />
+      <div data-pdf-hide="back-to-top">
+        <BackToTop />
+      </div>
     </div>
   );
 };
