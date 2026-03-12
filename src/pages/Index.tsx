@@ -13,6 +13,27 @@ const Index = () => {
 
       <div id="pdf-wrapper" className="lg:ml-72">
         <div id="pdf-content">
+          {/* Print-only header (hidden on screen) */}
+          <div id="pdf-print-header" className="hidden" style={{ display: "none" }}>
+            <div style={{ textAlign: "center", marginBottom: 30, paddingBottom: 20, borderBottom: "3px solid #1a5c3a" }}>
+              <p style={{ fontFamily: "Montserrat, sans-serif", fontSize: 12, letterSpacing: 3, color: "#c78c3c", textTransform: "uppercase", marginBottom: 8 }}>
+                Associação Paulista do Vale
+              </p>
+              <h1 style={{ fontFamily: "Montserrat, sans-serif", fontSize: 28, fontWeight: 900, color: "#1a5c3a", margin: "0 0 4px", lineHeight: 1.1 }}>
+                III CAMPORI DE LÍDERES
+              </h1>
+              <p style={{ fontFamily: "Montserrat, sans-serif", fontSize: 16, fontWeight: 700, color: "#c78c3c", margin: "8px 0" }}>
+                TEMA: ÍNTEGROS
+              </p>
+              <p style={{ fontSize: 13, color: "#666", margin: "4px 0" }}>
+                09 a 12 de outubro de 2026 · Catre, Analândia-SP
+              </p>
+              <p style={{ fontSize: 11, color: "#888" }}>
+                De Líder para Líderes · 1.000 participantes
+              </p>
+            </div>
+          </div>
+
           <div id="hero">
             <HeroSection />
           </div>
