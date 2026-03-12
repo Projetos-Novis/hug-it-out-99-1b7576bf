@@ -1,7 +1,20 @@
 import { motion } from "framer-motion";
-import { ChevronDown, Compass, Mountain, TreePine } from "lucide-react";
+import { ChevronDown, Compass, Download, Mountain, TreePine } from "lucide-react";
+import { useState } from "react";
+import { generatePDF } from "./pdfGenerator";
 
 export function HeroSection() {
+  const [generating, setGenerating] = useState(false);
+
+  const handleDownload = async () => {
+    setGenerating(true);
+    try {
+      await generatePDF();
+    } finally {
+      setGenerating(false);
+    }
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-primary topo-pattern overflow-hidden">
       {/* Decorative elements */}
@@ -39,16 +52,29 @@ export function HeroSection() {
           </p>
         </motion.div>
 
-        <motion.a
-          href="#indice"
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="inline-flex items-center gap-2 bg-secondary hover:bg-campori-earth-dark text-secondary-foreground font-heading font-bold text-lg px-8 py-4 rounded-lg transition-colors"
+          className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
-          Ir para o Índice
-          <ChevronDown className="w-5 h-5" />
-        </motion.a>
+          <a
+            href="#indice"
+            className="inline-flex items-center gap-2 bg-secondary hover:bg-campori-earth-dark text-secondary-foreground font-heading font-bold text-lg px-8 py-4 rounded-lg transition-colors"
+          >
+            Ir para o Índice
+            <ChevronDown className="w-5 h-5" />
+          </a>
+
+          <button
+            onClick={handleDownload}
+            disabled={generating}
+            className="inline-flex items-center gap-2 bg-primary-foreground/10 hover:bg-primary-foreground/20 border border-primary-foreground/30 text-primary-foreground font-heading font-bold text-lg px-8 py-4 rounded-lg transition-colors disabled:opacity-50 disabled:cursor-wait"
+          >
+            <Download className="w-5 h-5" />
+            {generating ? "Gerando PDF..." : "Baixar PDF"}
+          </button>
+        </motion.div>
       </div>
 
       {/* Bottom wave */}
