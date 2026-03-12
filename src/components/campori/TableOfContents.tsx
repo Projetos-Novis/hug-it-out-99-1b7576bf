@@ -13,7 +13,7 @@ export function TableOfContents() {
           className="text-center mb-12"
         >
           <BookOpen className="w-10 h-10 text-secondary mx-auto mb-4" />
-          <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary mb-3">
+          <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-3">
             Índice de Orientações
           </h2>
           <p className="text-muted-foreground text-lg">
