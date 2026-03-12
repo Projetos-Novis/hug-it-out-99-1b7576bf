@@ -30,6 +30,7 @@ export function BackToIndex() {
   return (
     <a
       href="#indice"
+      data-pdf-hide="back-link"
       className="inline-flex items-center gap-1 text-sm text-secondary hover:text-campori-earth-dark transition-colors mt-6 font-heading font-medium"
     >
       <ChevronUp className="w-4 h-4" />
