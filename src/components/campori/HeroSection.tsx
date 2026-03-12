@@ -1,17 +1,17 @@
 import { motion } from "framer-motion";
-import { ChevronDown, Compass, Download, Mountain, TreePine } from "lucide-react";
+import { ChevronDown, Compass, Monitor, Mountain, Smartphone, TreePine } from "lucide-react";
 import { useState } from "react";
-import { generatePDF } from "./pdfGenerator";
+import { generatePDF, type PdfMode } from "./pdfGenerator";
 
 export function HeroSection() {
-  const [generating, setGenerating] = useState(false);
+  const [generating, setGenerating] = useState<PdfMode | null>(null);
 
-  const handleDownload = async () => {
-    setGenerating(true);
+  const handleDownload = async (mode: PdfMode) => {
+    setGenerating(mode);
     try {
-      await generatePDF();
+      await generatePDF(mode);
     } finally {
-      setGenerating(false);
+      setGenerating(null);
     }
   };
 
@@ -56,7 +56,7 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4"
+          className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4"
         >
           <a
             href="#indice"
@@ -67,12 +67,21 @@ export function HeroSection() {
           </a>
 
           <button
-            onClick={handleDownload}
-            disabled={generating}
-            className="inline-flex items-center gap-2 bg-primary-foreground/10 hover:bg-primary-foreground/20 border border-primary-foreground/30 text-primary-foreground font-heading font-bold text-sm sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-lg transition-colors disabled:opacity-50 disabled:cursor-wait"
+            onClick={() => handleDownload("desktop")}
+            disabled={!!generating}
+            className="inline-flex items-center gap-2 bg-primary-foreground/10 hover:bg-primary-foreground/20 border border-primary-foreground/30 text-primary-foreground font-heading font-bold text-sm sm:text-base px-5 sm:px-6 py-3 rounded-lg transition-colors disabled:opacity-50 disabled:cursor-wait"
           >
-            <Download className="w-5 h-5" />
-            {generating ? "Gerando PDF..." : "Baixar PDF"}
+            <Monitor className="w-4 h-4 sm:w-5 sm:h-5" />
+            {generating === "desktop" ? "Gerando..." : "PDF Desktop"}
+          </button>
+
+          <button
+            onClick={() => handleDownload("mobile")}
+            disabled={!!generating}
+            className="inline-flex items-center gap-2 bg-primary-foreground/10 hover:bg-primary-foreground/20 border border-primary-foreground/30 text-primary-foreground font-heading font-bold text-sm sm:text-base px-5 sm:px-6 py-3 rounded-lg transition-colors disabled:opacity-50 disabled:cursor-wait"
+          >
+            <Smartphone className="w-4 h-4 sm:w-5 sm:h-5" />
+            {generating === "mobile" ? "Gerando..." : "PDF Mobile"}
           </button>
         </motion.div>
       </div>
