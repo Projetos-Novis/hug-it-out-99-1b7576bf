@@ -317,3 +317,56 @@ html {
     break-inside: avoid;
   }
 }
+
+/* ===== MOBILE PDF OVERRIDES ===== */
+@media print {
+  body.pdf-mobile {
+    font-size: 12pt !important;
+  }
+
+  body.pdf-mobile #pdf-content,
+  body.pdf-mobile #pdf-content > div {
+    max-width: 100% !important;
+  }
+
+  body.pdf-mobile table {
+    font-size: 8pt !important;
+  }
+
+  body.pdf-mobile th,
+  body.pdf-mobile td {
+    padding: 4px 6px !important;
+    font-size: 8pt !important;
+  }
+
+  body.pdf-mobile h2 {
+    font-size: 16pt !important;
+  }
+
+  body.pdf-mobile h3 {
+    font-size: 12pt !important;
+  }
+
+  body.pdf-mobile [class*="grid"] {
+    display: block !important;
+  }
+
+  body.pdf-mobile [class*="grid"] > * {
+    width: 100% !important;
+    margin-bottom: 8px !important;
+  }
+
+  body.pdf-mobile [class*="bg-card"] {
+    padding: 10px !important;
+  }
+
+  body.pdf-mobile .flex.items-center.gap-3,
+  body.pdf-mobile .flex.items-center.gap-2 {
+    flex-wrap: wrap !important;
+  }
+
+  body.pdf-mobile #indice a {
+    padding: 8px 10px !important;
+    font-size: 10pt !important;
+  }
+}
