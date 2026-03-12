@@ -79,12 +79,12 @@ export function SectionCard({ id, title, icon: Icon, children }: SectionCardProp
 
 export function DataTable({ headers, rows }: { headers: string[]; rows: string[][] }) {
   return (
-    <div className="overflow-x-auto my-4">
-      <table className="w-full text-sm border-collapse">
+    <div className="overflow-x-auto my-4 -mx-4 sm:mx-0">
+      <table className="w-full text-xs sm:text-sm border-collapse min-w-[400px]">
         <thead>
           <tr>
             {headers.map((h, i) => (
-              <th key={i} className="bg-primary text-primary-foreground font-heading font-semibold px-4 py-3 text-left first:rounded-tl-lg last:rounded-tr-lg">
+              <th key={i} className="bg-primary text-primary-foreground font-heading font-semibold px-2 sm:px-4 py-2 sm:py-3 text-left first:rounded-tl-lg last:rounded-tr-lg">
                 {h}
               </th>
             ))}
@@ -94,7 +94,7 @@ export function DataTable({ headers, rows }: { headers: string[]; rows: string[]
           {rows.map((row, ri) => (
             <tr key={ri} className={ri % 2 === 0 ? "bg-card" : "bg-muted/50"}>
               {row.map((cell, ci) => (
-                <td key={ci} className="px-4 py-3 border-b border-border">
+                <td key={ci} className="px-2 sm:px-4 py-2 sm:py-3 border-b border-border">
                   {cell}
                 </td>
               ))}

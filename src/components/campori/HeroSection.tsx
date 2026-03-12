@@ -60,7 +60,7 @@ export function HeroSection() {
         >
           <a
             href="#indice"
-            className="inline-flex items-center gap-2 bg-secondary hover:bg-campori-earth-dark text-secondary-foreground font-heading font-bold text-lg px-8 py-4 rounded-lg transition-colors"
+            className="inline-flex items-center gap-2 bg-secondary hover:bg-campori-earth-dark text-secondary-foreground font-heading font-bold text-sm sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-lg transition-colors"
           >
             Ir para o Índice
             <ChevronDown className="w-5 h-5" />
@@ -69,7 +69,7 @@ export function HeroSection() {
           <button
             onClick={handleDownload}
             disabled={generating}
-            className="inline-flex items-center gap-2 bg-primary-foreground/10 hover:bg-primary-foreground/20 border border-primary-foreground/30 text-primary-foreground font-heading font-bold text-lg px-8 py-4 rounded-lg transition-colors disabled:opacity-50 disabled:cursor-wait"
+            className="inline-flex items-center gap-2 bg-primary-foreground/10 hover:bg-primary-foreground/20 border border-primary-foreground/30 text-primary-foreground font-heading font-bold text-sm sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-lg transition-colors disabled:opacity-50 disabled:cursor-wait"
           >
             <Download className="w-5 h-5" />
             {generating ? "Gerando PDF..." : "Baixar PDF"}

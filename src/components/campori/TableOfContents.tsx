@@ -32,7 +32,7 @@ export function TableOfContents() {
             <a
               key={section.id}
               href={`#${section.id}`}
-              className="group flex items-center gap-4 p-4 rounded-lg bg-card hover:bg-primary hover:text-primary-foreground transition-all border border-border hover:border-primary"
+              className="group flex items-center gap-2 sm:gap-4 p-3 sm:p-4 rounded-lg bg-card hover:bg-primary hover:text-primary-foreground transition-all border border-border hover:border-primary"
             >
               <span className="font-heading text-sm font-bold text-secondary group-hover:text-secondary-foreground bg-secondary/10 group-hover:bg-secondary/30 w-8 h-8 rounded flex items-center justify-center shrink-0">
                 {String(i + 1).padStart(2, "0")}
