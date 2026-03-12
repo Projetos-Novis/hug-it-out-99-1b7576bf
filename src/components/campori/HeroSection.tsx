@@ -31,23 +31,23 @@ export function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <p className="font-heading text-secondary font-bold text-sm tracking-[0.3em] uppercase mb-4">
+          <p className="font-heading text-secondary font-bold text-xs sm:text-sm tracking-[0.2em] sm:tracking-[0.3em] uppercase mb-3 sm:mb-4">
             Associação Paulista do Vale
           </p>
-          <h1 className="font-heading text-5xl md:text-7xl lg:text-8xl font-black text-primary-foreground mb-4 leading-tight">
+          <h1 className="font-heading text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-black text-primary-foreground mb-3 sm:mb-4 leading-tight">
             III CAMPORI
             <br />
             <span className="text-secondary">DE LÍDERES</span>
           </h1>
-          <div className="inline-block bg-secondary/20 border border-secondary/40 rounded-lg px-6 py-3 mb-6">
-            <p className="font-heading text-primary-foreground/90 text-xl md:text-2xl font-bold tracking-wide">
+          <div className="inline-block bg-secondary/20 border border-secondary/40 rounded-lg px-4 sm:px-6 py-2 sm:py-3 mb-4 sm:mb-6">
+            <p className="font-heading text-primary-foreground/90 text-base sm:text-xl md:text-2xl font-bold tracking-wide">
               TEMA: ÍNTEGROS
             </p>
           </div>
-          <p className="text-primary-foreground/70 text-lg md:text-xl mb-2 font-body">
+          <p className="text-primary-foreground/70 text-sm sm:text-lg md:text-xl mb-1 sm:mb-2 font-body">
             09 a 12 de outubro de 2026 · Catre, Analândia-SP
           </p>
-          <p className="text-primary-foreground/50 text-base mb-10 font-body">
+          <p className="text-primary-foreground/50 text-xs sm:text-base mb-8 sm:mb-10 font-body">
             De Líder para Líderes · 1.000 participantes
           </p>
         </motion.div>
