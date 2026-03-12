@@ -1,4 +1,5 @@
 import { HeroSection } from "@/components/campori/HeroSection";
+import { IntroSection } from "@/components/campori/IntroSection";
 import { TableOfContents } from "@/components/campori/TableOfContents";
 import { SidebarNav } from "@/components/campori/SidebarNav";
 import { ContentSections } from "@/components/campori/ContentSections";
