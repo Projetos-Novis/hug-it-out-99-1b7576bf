@@ -60,13 +60,13 @@ interface SectionCardProps {
 
 export function SectionCard({ id, title, icon: Icon, children }: SectionCardProps) {
   return (
-    <section id={id} className="scroll-mt-20 py-12">
-      <div className="bg-card border border-border rounded-xl p-6 md:p-8 shadow-sm">
-        <div className="flex items-center gap-3 mb-6">
-          <div className="bg-primary/10 text-primary p-2.5 rounded-lg">
-            <Icon className="w-6 h-6" />
+    <section id={id} className="scroll-mt-20 py-6 sm:py-12">
+      <div className="bg-card border border-border rounded-xl p-4 sm:p-6 md:p-8 shadow-sm">
+        <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
+          <div className="bg-primary/10 text-primary p-2 sm:p-2.5 rounded-lg">
+            <Icon className="w-5 h-5 sm:w-6 sm:h-6" />
           </div>
-          <h2 className="font-heading text-2xl md:text-3xl font-bold text-primary">
+          <h2 className="font-heading text-xl sm:text-2xl md:text-3xl font-bold text-primary">
             {title}
           </h2>
         </div>
@@ -79,12 +79,12 @@ export function SectionCard({ id, title, icon: Icon, children }: SectionCardProp
 
 export function DataTable({ headers, rows }: { headers: string[]; rows: string[][] }) {
   return (
-    <div className="overflow-x-auto my-4">
-      <table className="w-full text-sm border-collapse">
+    <div className="overflow-x-auto my-4 -mx-4 sm:mx-0">
+      <table className="w-full text-xs sm:text-sm border-collapse min-w-[400px]">
         <thead>
           <tr>
             {headers.map((h, i) => (
-              <th key={i} className="bg-primary text-primary-foreground font-heading font-semibold px-4 py-3 text-left first:rounded-tl-lg last:rounded-tr-lg">
+              <th key={i} className="bg-primary text-primary-foreground font-heading font-semibold px-2 sm:px-4 py-2 sm:py-3 text-left first:rounded-tl-lg last:rounded-tr-lg">
                 {h}
               </th>
             ))}
@@ -94,7 +94,7 @@ export function DataTable({ headers, rows }: { headers: string[]; rows: string[]
           {rows.map((row, ri) => (
             <tr key={ri} className={ri % 2 === 0 ? "bg-card" : "bg-muted/50"}>
               {row.map((cell, ci) => (
-                <td key={ci} className="px-4 py-3 border-b border-border">
+                <td key={ci} className="px-2 sm:px-4 py-2 sm:py-3 border-b border-border">
                   {cell}
                 </td>
               ))}

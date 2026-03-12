@@ -509,14 +509,21 @@ export function ContentSections() {
             { date: "09/10/2026", task: "Abertura do III Campori de Líderes (6h)", tag: "Evento" },
             { date: "12/10/2026", task: "Encerramento do Campori (17h)", tag: "Evento" },
           ].map((item, i) => (
-            <div key={i} className="flex items-start gap-3 bg-muted rounded-lg p-3">
-              <div className="shrink-0 text-center min-w-[90px]">
-                <p className="font-heading font-bold text-sm text-primary">{item.date}</p>
+            <div key={i} className="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-3 bg-muted rounded-lg p-3">
+              <div className="shrink-0 flex sm:block items-center gap-2">
+                <p className="font-heading font-bold text-xs sm:text-sm text-primary min-w-[90px]">{item.date}</p>
+                <span className={`sm:hidden shrink-0 text-[10px] font-heading font-semibold px-1.5 py-0.5 rounded ${
+                  item.tag === "Inscrição" ? "bg-campori-sky/20 text-campori-sky" :
+                  item.tag === "Evento" ? "bg-secondary/20 text-secondary" :
+                  "bg-primary/10 text-primary"
+                }`}>
+                  {item.tag}
+                </span>
               </div>
               <div className="flex-1">
-                <p className="text-sm text-foreground/90">{item.task}</p>
+                <p className="text-xs sm:text-sm text-foreground/90">{item.task}</p>
               </div>
-              <span className={`shrink-0 text-xs font-heading font-semibold px-2 py-1 rounded ${
+              <span className={`hidden sm:inline-block shrink-0 text-xs font-heading font-semibold px-2 py-1 rounded ${
                 item.tag === "Inscrição" ? "bg-campori-sky/20 text-campori-sky" :
                 item.tag === "Evento" ? "bg-secondary/20 text-secondary" :
                 "bg-primary/10 text-primary"
