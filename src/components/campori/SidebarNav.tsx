@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { sections } from "./camporiData";
-import { Menu, X } from "lucide-react";
+import { Menu, X, CalendarDays } from "lucide-react";
 
 export function SidebarNav() {
   const [active, setActive] = useState("");
@@ -46,6 +47,16 @@ export function SidebarNav() {
           <span className="truncate">{s.title}</span>
         </a>
       ))}
+      <div className="border-t border-border mt-4 pt-4">
+        <Link
+          to="/agenda"
+          onClick={() => setOpen(false)}
+          className="flex items-center gap-2 px-3 py-2.5 rounded-md text-sm font-heading font-bold bg-secondary/10 text-secondary hover:bg-secondary/20 transition-colors"
+        >
+          <CalendarDays className="w-4 h-4 shrink-0" />
+          <span className="truncate">Agenda DBV APV 2026</span>
+        </Link>
+      </div>
     </nav>
   );
 
