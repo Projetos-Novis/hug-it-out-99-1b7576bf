@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { sections } from "./camporiData";
-import { Menu, X } from "lucide-react";
+import { Menu, X, CalendarDays } from "lucide-react";
 
 export function SidebarNav() {
   const [active, setActive] = useState("");
