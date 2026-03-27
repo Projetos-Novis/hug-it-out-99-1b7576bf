@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
-import { ChevronDown, Compass, Monitor, Mountain, Smartphone, TreePine } from "lucide-react";
+import { ChevronDown, Compass, Monitor, Mountain, Smartphone, TreePine, CalendarDays } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { generatePDF, type PdfMode } from "./pdfGenerator";
 
 export function HeroSection() {
