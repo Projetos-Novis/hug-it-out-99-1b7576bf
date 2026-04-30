@@ -94,7 +94,7 @@ export function DataTable({ headers, rows }: { headers: string[]; rows: string[]
           {rows.map((row, ri) => (
             <tr key={ri} className={ri % 2 === 0 ? "bg-card" : "bg-muted/50"}>
               {row.map((cell, ci) => (
-                <td key={ci} className="px-2 sm:px-4 py-2 sm:py-3 border-b border-border">
+                <td key={ci} className="px-2 sm:px-4 py-2 sm:py-3 border-b border-border font-serif text-center">
                   {cell}
                 </td>
               ))}
