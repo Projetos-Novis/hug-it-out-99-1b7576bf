@@ -188,7 +188,7 @@ export function ContentSections() {
       {/* DAYPASS */}
       <SectionCard id="daypass" title="Day Pass – Visitantes" icon={sections[9].icon}>
         <div className="bg-campori-sky/10 border border-campori-sky/30 rounded-lg p-5">
-          <p className="font-heading font-bold text-xl text-foreground mb-2">R$ 50,00 por pessoa</p>
+          <p className="font-heading font-bold text-xl text-foreground mb-2">R$ 150,00 por pessoa</p>
           <p className="text-foreground/90">
             O Campori estará aberto para visitação (inclusive no sábado) das <strong>7:00h às 18:00h</strong>, mediante aquisição antecipada via link enviado pelo Regional.
           </p>
@@ -218,11 +218,12 @@ export function ContentSections() {
           <li>Cada participante deve levar sua <strong>Bíblia</strong> em todos os programas — isso terá pontuação;</li>
           <li>Não será permitido na arena: apitos, tambores, flautas, buzinas;</li>
         </ul>
+        <div className="mb-6"></div>
         <AlertBox type="danger" title="Proibições na programação">
           É terminantemente proibido o uso de ponteiros laser, flash, fogos de artifício, bastões ou latas de fumaça colorida durante as programações. Uso de objetos que perturbem projeções será infração disciplinar.
         </AlertBox>
         <p className="text-foreground/90 mt-4">
-          O Campori será formado por turnos de atividades específicas, chamado de <strong>Carrossel</strong>.
+          O Campori será formado por turnos de atividades específicas, chamado de&nbsp;<strong>Carrossel</strong>.
         </p>
       </SectionCard>
 
