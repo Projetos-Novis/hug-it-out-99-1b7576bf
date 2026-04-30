@@ -21,10 +21,10 @@ export function IntroSection() {
           </div>
           <div className="prose-campori space-y-4 text-sm sm:text-base leading-relaxed text-foreground/85">
             <p>
-              Olá, Coordenadores, Regionais e Diretores de Clube de Desbravadores e Aventureiros, este é um ano muito esperado, pois nele, acontecerá o <strong className="text-primary">III Campori de Líderes de Desbravadores e Aventureiros</strong> da Associação Paulista do Vale, no Catre, na cidade de Analândia - SP.
+              Olá, Coordenadores, Regionais e Diretores da MDA, este é um ano muito esperado, pois nele, acontecerá o <strong className="text-primary">III Campori de Líderes de Desbravadores e Aventureiros</strong> da Associação Paulista do Vale, no Catre, na cidade de Analândia - SP.
             </p>
             <p>
-              Pela primeira vez, este Campori será por Regiões, nosso objetivo é envolver os membros aspirantes deste campo em companheirismo e ações práticas da formação de cada indivíduo. O tema para este grande encontro de celebração será <strong className="text-secondary font-heading">ÍNTEGROS</strong>. Pois, os líderes já investidos e aspirantes a líderes de Desbravadores e Aventureiros, em cada momento, são desafiados por Deus a terem uma liderança ÍNTEGRA. E isso só é possível, através do estudo da <strong>PALAVRA</strong>, vivendo em <strong>RELACIONAMENTO</strong> uns com os outros e tendo uma vida de <strong>ORAÇÃO</strong>.
+              Pela primeira vez, este Campori será por Regiões, nosso objetivo é envolver os membros aspirantes deste campo em companheirismo e ações práticas da formação de cada indivíduo. O tema para este grande encontro de celebração será <strong className="text-secondary font-heading">ÍNTEGROS</strong>. Pois, os líderes já investidos e aspirantes a líderes da MDA, em cada momento, são desafiados por Deus a terem uma liderança ÍNTEGRA. E isso só é possível, através do estudo da <strong>PALAVRA</strong>, vivendo em <strong>RELACIONAMENTO</strong> uns com os outros e tendo uma vida de <strong>ORAÇÃO</strong>.
             </p>
             <p>
               Este ano, você e a sua Região tem o <strong className="text-primary">DESAFIO</strong> de testemunhar do amor de Jesus em sua cidade, igreja e Clube, no cumprimento dos pré-requisitos e, no final, juntos com todas as regiões da APV, celebraremos grandes conquistas no III Campori de Líderes de Desbravadores e Aventureiros. Um bom desafio para você!

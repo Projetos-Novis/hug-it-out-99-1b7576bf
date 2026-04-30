@@ -59,7 +59,6 @@ export function ContentSections() {
           <li>Verifique a condição do ônibus para a viagem;</li>
           <li>Confirme se a empresa tem estrutura de apoio dentro da rota;</li>
           <li>Confira a documentação de viagem intermunicipal;</li>
-          <li>Atente à documentação legal para viagem de menores de idade;</li>
           <li>Não haverá estacionamento para ônibus na área do Campori;</li>
           <li>Hospedagem e alimentação dos motoristas <strong>não é responsabilidade do evento</strong> — inclua no contrato;</li>
           <li>Defina o responsável pelo seguro e gastos da viagem;</li>
@@ -105,14 +104,14 @@ export function ContentSections() {
         <h3 className="font-heading font-bold text-base text-primary mb-2">Requisitos para os cargos:</h3>
         <ul className="list-disc pl-5 space-y-1 text-foreground/90">
           <li>Maiores de idade;</li>
-          <li>Matriculados e frequentem ativamente um clube de DBV da sua região;</li>
+          <li>Matriculados e que frequentem ativamente um clube da MDA da sua região;</li>
           <li>Membros batizados na IASD com carta de recomendação da igreja.</li>
         </ul>
       </SectionCard>
 
       {/* PARTICIPAÇÃO DO LÍDER */}
       <SectionCard id="participacao-lider" title="Como o Líder ou Aspirante Participa" icon={sections[5].icon}>
-        <p className="text-foreground/90">O Líder (L, LM, LMA) ou aspirante deve:</p>
+        <p className="text-foreground/90">O Líder, Líder Máster, Líder Máster Avançado ou aspirante deve:</p>
         <ul className="list-disc pl-5 space-y-1 mt-2 text-foreground/90">
           <li>Ser membro de um Clube de Desbravadores;</li>
           <li>Estar matriculado e com o Seguro Anual 2026 ativo;</li>
