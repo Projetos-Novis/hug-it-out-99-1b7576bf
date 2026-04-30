@@ -144,32 +144,71 @@ export default function Agenda() {
 
             <div className="space-y-3">
               {section.items.map((item, i) => (
-                <article key={i} className="bg-card border border-border rounded-xl p-4 sm:p-5">
+                <article key={i} className="bg-card border border-border rounded-xl p-4 sm:p-5 shadow-sm hover:shadow-md transition-shadow">
                   <div className="flex flex-wrap items-start justify-between gap-3 mb-2">
-                    <h3 className="font-heading font-bold text-primary text-base sm:text-lg flex-1">
-                      {item.code && <span className="text-secondary mr-2">{item.code}</span>}
+                    <h3 className="font-heading font-bold text-primary text-base sm:text-lg flex-1 leading-snug">
+                      {item.code && (
+                        <span className="inline-flex items-center justify-center font-heading font-black text-xs bg-secondary/15 text-secondary px-2 py-0.5 rounded mr-2 align-middle">
+                          {item.code}
+                        </span>
+                      )}
                       {item.text}
                     </h3>
                     {item.points && (
-                      <span className="font-heading font-bold text-xs sm:text-sm bg-secondary/15 text-secondary px-3 py-1 rounded-full whitespace-nowrap">
+                      <span className="font-heading font-bold text-xs sm:text-sm bg-secondary text-secondary-foreground px-3 py-1 rounded-full whitespace-nowrap shadow-sm">
                         {item.points}
                       </span>
                     )}
                   </div>
 
                   {item.details && item.details.length > 0 && (
-                    <ul className="mt-3 space-y-1.5 pl-4 border-l-2 border-secondary/30">
-                      {item.details.map((d, j) => (
-                        <li key={j} className="text-sm text-foreground leading-relaxed">{d}</li>
-                      ))}
+                    <ul className="mt-3 space-y-2 pl-4 border-l-2 border-secondary/40">
+                      {item.details.map((d, j) => {
+                        const trimmed = d.trim();
+                        const isHeading = /^\(.*\)$/.test(trimmed) || /^(TEMA|FORMATO|CATEGORIAS?|INSCRIÇÃO|VALOR|DATA|Datas|Regras para participar|Participantes convocados|Como Tema|Com o Tema):/i.test(trimmed);
+                        const pointsMatch = trimmed.match(/[—:-]\s*(\d{1,4}\s*pts?)\s*$/i);
+                        const cleanText = (pointsMatch ? trimmed.slice(0, pointsMatch.index).replace(/[—:-]\s*$/, "").trim() : trimmed).replace(/^[-*>•]\s*/, "");
+
+                        if (isHeading && !pointsMatch) {
+                          return (
+                            <li key={j} className="text-sm font-heading font-semibold text-primary list-none -ml-4 pt-1">
+                              {trimmed}
+                            </li>
+                          );
+                        }
+
+                        return (
+                          <li key={j} className="text-sm text-foreground leading-relaxed list-none flex gap-2">
+                            <span className={`shrink-0 mt-1.5 w-1.5 h-1.5 rounded-full ${pointsMatch ? "bg-secondary" : "bg-muted-foreground/40"}`} />
+                            <span className="flex-1">
+                              {cleanText}
+                              {pointsMatch && (
+                                <span className="ml-2 inline-block font-heading font-bold text-xs bg-secondary/15 text-secondary px-2 py-0.5 rounded-full whitespace-nowrap align-middle">
+                                  {pointsMatch[1]}
+                                </span>
+                              )}
+                            </span>
+                          </li>
+                        );
+                      })}
                     </ul>
                   )}
 
                   {item.notes && item.notes.length > 0 && (
-                    <div className="mt-3 space-y-2 text-sm text-muted-foreground leading-relaxed">
-                      {item.notes.map((n, j) => (
-                        <p key={j}>{n}</p>
-                      ))}
+                    <div className="mt-4 space-y-2 text-sm text-muted-foreground leading-relaxed bg-muted/30 rounded-lg p-3 border border-border/50">
+                      {item.notes.map((n, j) => {
+                        const t = n.trim();
+                        const labelMatch = t.match(/^(Nota|Observação|OBS\.?|OBSERVAÇÃO|IMPORTANTE|Dica)[:.]\s*/i);
+                        if (labelMatch) {
+                          const rest = t.slice(labelMatch[0].length);
+                          return (
+                            <p key={j}>
+                              <span className="font-heading font-bold text-primary">{labelMatch[1].replace(/\.$/, "")}:</span> {rest}
+                            </p>
+                          );
+                        }
+                        return <p key={j}>{t}</p>;
+                      })}
                     </div>
                   )}
                 </article>
