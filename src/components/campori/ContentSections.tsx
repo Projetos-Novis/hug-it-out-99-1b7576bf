@@ -493,41 +493,45 @@ export function ContentSections() {
         </p>
         <div className="space-y-3">
           {[
-            { date: "30/05/2026", task: "Enviar Planejamento Anual da Região (A1)", tag: "Pré-Requisito" },
+            { date: "30/05/2026", task: "Enviar Planejamento Anual da Região (A1)", tag: "" },
             { date: "30/06/2026", task: "Data de corte – Idade mínima 16 anos", tag: "Inscrição" },
-            { date: "30/06/2026", task: "Ano Bíblico atualizado (C3)", tag: "Pré-Requisito" },
+            { date: "30/06/2026", task: "Ano Bíblico atualizado (C3)", tag: "" },
             { date: "07-09/07/2026", task: "Período de inscrições (apenas 3 dias!)", tag: "Inscrição" },
-            { date: "15/07/2026", task: "Secretaria On-Line no SGC (A2)", tag: "Pré-Requisito" },
-            { date: "01-20/07/2026", task: "Troca de nomes dos inscritos", tag: "Inscrição" },
-            { date: "30/07/2026", task: "Conclusão do Curso de Leitura – livro CONTAGEM REGRESSIVA (C4)", tag: "Pré-Requisito" },
-            { date: "31/07/2026", task: "PG das Novas Gerações concluído (C5)", tag: "Pré-Requisito" },
-            { date: "05/10/2026", task: "Suporte a Clubes concluído (T8)", tag: "Pré-Requisito" },
-            { date: "Julho/2026", task: "Missão Calebe (R12)", tag: "Pré-Requisito" },
-            { date: "Set/2026", task: "Visitas a Desbravadores concluídas (C6)", tag: "Pré-Requisito" },
+            { date: "15/07/2026", task: "Secretaria On-Line no SGC (A2)", tag: "" },
+            { date: "01-20/09/2026", task: "Troca de nomes dos inscritos", tag: "Inscrição" },
+            { date: "30/07/2026", task: "Conclusão do Curso de Leitura – livro CONTAGEM REGRESSIVA (C4)", tag: "" },
+            { date: "", task: "", tag: "" },
+            { date: "05/10/2026", task: "Suporte a Clubes concluído (T8)", tag: "" },
+            { date: "Julho/2026", task: "Missão Calebe (R12)", tag: "" },
+            { date: "Set/2026", task: "Visitas a Desbravadores concluídas (C6)", tag: "" },
             { date: "09/10/2026", task: "Abertura do III Campori de Líderes (6h)", tag: "Evento" },
             { date: "12/10/2026", task: "Encerramento do Campori (17h)", tag: "Evento" },
-          ].map((item, i) => (
+          ].filter(item => item.date !== "" || item.task !== "").map((item, i) => (
             <div key={i} className="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-3 bg-muted rounded-lg p-3">
               <div className="shrink-0 flex sm:block items-center gap-2">
                 <p className="font-heading font-bold text-xs sm:text-sm text-primary min-w-[90px]">{item.date}</p>
-                <span className={`sm:hidden shrink-0 text-[10px] font-heading font-semibold px-1.5 py-0.5 rounded ${
+                {item.tag && (
+                  <span className={`sm:hidden shrink-0 text-[10px] font-heading font-semibold px-1.5 py-0.5 rounded ${
+                    item.tag === "Inscrição" ? "bg-campori-sky/20 text-campori-sky" :
+                    item.tag === "Evento" ? "bg-secondary/20 text-secondary" :
+                    "bg-primary/10 text-primary"
+                  }`}>
+                    {item.tag}
+                  </span>
+                )}
+              </div>
+              <div className="flex-1">
+                <p className="text-xs sm:text-sm text-foreground/90">{item.task}</p>
+              </div>
+              {item.tag && (
+                <span className={`hidden sm:inline-block shrink-0 text-xs font-heading font-semibold px-2 py-1 rounded ${
                   item.tag === "Inscrição" ? "bg-campori-sky/20 text-campori-sky" :
                   item.tag === "Evento" ? "bg-secondary/20 text-secondary" :
                   "bg-primary/10 text-primary"
                 }`}>
                   {item.tag}
                 </span>
-              </div>
-              <div className="flex-1">
-                <p className="text-xs sm:text-sm text-foreground/90">{item.task}</p>
-              </div>
-              <span className={`hidden sm:inline-block shrink-0 text-xs font-heading font-semibold px-2 py-1 rounded ${
-                item.tag === "Inscrição" ? "bg-campori-sky/20 text-campori-sky" :
-                item.tag === "Evento" ? "bg-secondary/20 text-secondary" :
-                "bg-primary/10 text-primary"
-              }`}>
-                {item.tag}
-              </span>
+              )}
             </div>
           ))}
         </div>
