@@ -326,8 +326,8 @@ export function ContentSections() {
           headers={["Código", "Descrição", "Pts"]}
           rows={[
             ["C3", "Ano Bíblico – Atualizado até 30/06/26. ≥80% = 50pts; 50-79% = 25pts; <50% = 0pts.", "50"],
-            ["C4", "Curso de Leitura – Livro ORAÇÃO concluído até 30/07/26. ≥80% = 50pts; 50-79% = 25pts; <50% = 0pts.", "50"],
-            ["C5", "PG my Life – Cada membro participar/liderar PG de março a 31/julho. Anexar foto.", "100"],
+            ["C4", "Curso de Leitura – Livro CONTAGEM REGRESSIVA  concluído até 30/07/26. ≥80% = 50pts; 50-79% = 25pts; <50% = 0pts.", "50"],
+            ["C5", "Cada membro participar/liderar PG de março a 31/julho. Anexar foto.", "100"],
             ["C6", "Visita a Desbravadores – Escolher 3 DBVs e visitar 2x cada (abril-jun e jul-set). Anexar lista.", "100"],
           ]}
         />
