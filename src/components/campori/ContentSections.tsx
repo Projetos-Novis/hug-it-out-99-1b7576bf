@@ -9,9 +9,9 @@ export function ContentSections() {
         <p className="text-lg text-muted-foreground mb-6 italic">
           "De Líder para Líderes"&nbsp; Um Campori por Regiões, promovendo companheirismo e formação prática.
         </p>
-        <h3 className="font-heading font-bold text-lg text-primary mb-3">Filosofia do III Campori de Líderes / APV</h3>
+        <h3 className="font-heading font-bold text-lg text-primary mb-3">Filosofia do III Campori de Líderes de Desbravadores e Aventureiros - APV</h3>
         <ol className="list-decimal pl-5 space-y-2 text-foreground/90 mb-6">
-          <li>O Aspirante e o Líder de Desbravador são o centro. Eles são o foco de todo o III Campori de Líderes APV.</li>
+          <li>O Aspirante e o Líder de Desbravador são o centro. Eles são o foco de todo o III Campori de Líderes de Desbravadores e Aventureiros - APV.</li>
           <li>O sermão é mais importante do que o programa.</li>
           <li>As reuniões, eventos e programas devem ser vistas por todos os participantes.</li>
           <li>Decisões para Jesus são mais importantes que um troféu.</li>
@@ -154,7 +154,7 @@ export function ContentSections() {
           <li>Acesse o sistema: <strong>https://sg.sdasystems.org</strong></li>
           <li>Entre com suas credenciais;</li>
           <li>Vá até o módulo <strong>INSCRIÇÕES</strong>;</li>
-          <li>Procure: "III Campori de Líderes – APV";</li>
+          <li>Procure: "III Campori de Líderes de Desbravadores e Aventureiros - APV";</li>
           <li>Insira todos os membros da Região;</li>
           <li>Gere os links e encaminhe para cada um pagar;</li>
           <li>Pagamento: PIX, Débito ou Crédito (até 3x).</li>

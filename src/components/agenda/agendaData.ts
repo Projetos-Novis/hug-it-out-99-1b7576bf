@@ -21,7 +21,7 @@ export const calendarData: CalendarMonth[] = [
     events: [
       { date: "01", title: "Convenção Novas Gerações SJC" },
       { date: "08", title: "Convenção Novas Gerações GRU" },
-      { date: "15 a 17", title: "Inscrição CTBD e CTDA" },
+      { date: "15 a 17", title: "Inscrição CTBD e CTDA (Tesouraria e Capelania)" },
       { date: "22", title: "Convenção Novas Gerações MOGI" },
     ],
   },
@@ -49,12 +49,12 @@ export const calendarData: CalendarMonth[] = [
     events: [
       { date: "19 e 20", title: "1º e 2º módulo do Curso de Líderes DBV" },
       { date: "23 a 25", title: "Inscrição do JCL e QLA MDA" },
-      { date: "30", title: "1ª data de relatório do ranking" },
+      { date: "30", title: "1ª data de relatório do ranking - 30/06" },
     ],
   },
   {
     month: "Julho",
-    events: [{ date: "7 a 9", title: "Inscrição III Campori de Líderes APV" }],
+    events: [{ date: "7 a 9", title: "Inscrição III Campori de Líderes de Desbravadores e Aventureiros - APV" }],
   },
   {
     month: "Agosto",
@@ -75,7 +75,7 @@ export const calendarData: CalendarMonth[] = [
   },
   {
     month: "Outubro",
-    events: [{ date: "09 a 12", title: "III Campori de Líderes APV" }],
+    events: [{ date: "09 a 12", title: "III Campori de Líderes de Desbravadores e Aventureiros - APV" }],
   },
   {
     month: "Novembro",
