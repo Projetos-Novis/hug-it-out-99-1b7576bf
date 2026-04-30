@@ -317,7 +317,7 @@ export function ContentSections() {
           headers={["Código", "Descrição", "Pts"]}
           rows={[
             ["A1", "Planejamento Anual da Região – Enviar até 30/05/26 o planejamento detalhado com atividades, responsáveis e locais. Anexar no Ranking.", "100"],
-            ["A2", "Secretaria On-Line no SGC – Inscrever todos os membros no módulo Fábrica de Líderes com dados atualizados até 15/07/26.", "100"],
+            ["A2", "Secretaria On-Line no SGC – Inscrever todos os membros da Região com os dados atualizados até 15/07/26.", "100"],
           ]}
         />
 
