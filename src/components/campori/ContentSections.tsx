@@ -121,19 +121,18 @@ export function ContentSections() {
 
       {/* SEGURO */}
       <SectionCard id="seguro" title="Seguro Anual ARM" icon={sections[6].icon}>
-        <p className="text-foreground/90 mb-3">Para assegurar os membros no seguro:</p>
+        <p className="text-foreground/90 mb-3">
+          Para assegurar os membros que não estão cadastrados no SGS, favor incluir o link abaixo para que façam o seguro avulso <a href="https://armsa.com/seguros/" target="_blank" rel="noopener noreferrer" className="text-primary underline">https://armsa.com/seguros/</a>
+        </p>
         <ol className="list-decimal pl-5 space-y-1 text-foreground/90 mb-3">
           <li>Acesse o módulo <strong>PROTEÇÃO DE CLUBES</strong></li>
           <li>Clique em <strong>Incluir Vidas</strong></li>
           <li>Marque os nomes não assegurados e inclua-os no Seguro Anual ARM vigência 2026</li>
         </ol>
         <AlertBox type="info" title="Abrangência">
-          O Seguro vale para todos: participantes, cozinheiras, segurança, profissional de saúde e outros com Ficha de Membro ativa no Clube de DBV local.
+          O Seguro vale para todos: participantes, cozinha(o)s, segurança, profissional de saúde e outros com Ficha de Membro ativa no Clube de DBV local.
         </AlertBox>
-        <h3 className="font-heading font-bold text-base text-primary mt-4 mb-2">Validação de Idade</h3>
-        <AlertBox type="danger" title="Data de corte">
-          Somente aspirantes que completarem 16 anos até <strong>30 de junho de 2026</strong> poderão ser inscritos. Após essa data, não poderão participar.
-        </AlertBox>
+        <div className="mt-4"></div>
       </SectionCard>
 
       {/* INSCRIÇÕES */}
