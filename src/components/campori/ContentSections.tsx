@@ -245,11 +245,11 @@ export function ContentSections() {
         <h3 className="font-heading font-bold text-base text-primary mb-2">Cada participante deve levar:</h3>
         <ol className="list-decimal pl-5 space-y-1 text-foreground/90 mb-4">
           <li>Bíblia e Lição de Escola Sabatina dos Adultos;</li>
-          <li>Documentos de Identificação, Carteira SUS;</li>
-          <li>Uniformes DBV Oficial e do Campo;</li>
+          <li>Documentos de Identificação, Carteira SUS; (Com foto)</li>
+          <li>Uniformes MDA Oficial e do Campo;</li>
           <li>Boné, protetor solar e capa de chuva;</li>
           <li>Caneta e caderneta;</li>
-          <li>Insígnias, pins e recordações para trocar.</li>
+          <li>Insígnias, trunfos, pins e recordações para trocar.</li>
         </ol>
 
         <h3 className="font-heading font-bold text-base text-primary mb-2">Cada Região deve levar:</h3>
