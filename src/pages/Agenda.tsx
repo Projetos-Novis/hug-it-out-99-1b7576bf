@@ -78,14 +78,20 @@ export default function Agenda() {
               initial={{ opacity: 0, scale: 0.9 }} 
               animate={{ opacity: 1, scale: 1 }} 
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="flex items-center gap-4 shrink-0"
+              className="flex items-center gap-3 sm:gap-4 shrink-0"
             >
+              <img 
+                src="https://rmetppilvfrxosvxzhgj.supabase.co/storage/v1/object/public/message-attachments/c3282a3e-4626-4299-be47-5fdd33267ae5/1777507787884_440qbn_imagem_emblema_a1.svg" 
+                alt="Emblema A1" 
+                className="h-9 sm:h-11 w-auto opacity-80"
+              />
+              <div className="h-6 w-[1px] bg-primary-foreground/20" />
               <img 
                 src="https://rmetppilvfrxosvxzhgj.supabase.co/storage/v1/object/public/message-attachments/c3282a3e-4626-4299-be47-5fdd33267ae5/1777507740748_jehh4y_D3.png" 
                 alt="Logo Desbravadores" 
                 className="h-10 sm:h-12 w-auto brightness-0 invert opacity-80"
               />
-              <div className="h-8 w-[1px] bg-primary-foreground/20" />
+              <div className="h-6 w-[1px] bg-primary-foreground/20" />
               <img 
                 src="https://rmetppilvfrxosvxzhgj.supabase.co/storage/v1/object/public/message-attachments/c3282a3e-4626-4299-be47-5fdd33267ae5/1777507634362_ghng91_de07f-logoiasd-preto2.png" 
                 alt="Logo IASD" 
