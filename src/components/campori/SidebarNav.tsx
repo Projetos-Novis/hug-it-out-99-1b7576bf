@@ -65,8 +65,8 @@ export function SidebarNav() {
       {/* Desktop sidebar */}
       <aside className="hidden lg:block fixed left-0 top-0 w-72 h-screen bg-card border-r border-border overflow-y-auto py-6 px-4 z-40">
         <a href="#hero" className="block mb-6 px-3">
-          <p className="font-heading text-lg font-black text-primary leading-tight">III Campori</p>
-          <p className="font-heading text-xs font-semibold text-secondary">de Líderes APV</p>
+          <p className="font-heading text-lg font-black text-primary leading-tight leading-[1.1]">III Campori de Líderes</p>
+          <p className="font-heading text-[10px] font-semibold text-secondary leading-tight">de Desbravadores e Aventureiros APV</p>
         </a>
         {navContent}
       </aside>
@@ -86,8 +86,8 @@ export function SidebarNav() {
           <div className="absolute inset-0 bg-foreground/40" onClick={() => setOpen(false)} />
           <aside className="absolute left-0 top-0 w-72 h-screen bg-card overflow-y-auto py-6 px-4 shadow-xl">
             <a href="#hero" className="block mb-6 px-3" onClick={() => setOpen(false)}>
-              <p className="font-heading text-lg font-black text-primary leading-tight">III Campori</p>
-              <p className="font-heading text-xs font-semibold text-secondary">de Líderes APV</p>
+              <p className="font-heading text-lg font-black text-primary leading-tight leading-[1.1]">III Campori de Líderes</p>
+              <p className="font-heading text-[10px] font-semibold text-secondary leading-tight">de Desbravadores e Aventureiros APV</p>
             </a>
             {navContent}
           </aside>

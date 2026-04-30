@@ -21,7 +21,7 @@ const Index = () => {
                 Associação Paulista do Vale
               </p>
               <h1 style={{ fontFamily: "Montserrat, sans-serif", fontSize: 28, fontWeight: 900, color: "#1a5c3a", margin: "0 0 4px", lineHeight: 1.1 }}>
-                III CAMPORI DE LÍDERES
+                III CAMPORI DE LÍDERES DE DESBRAVADORES E AVENTUREIROS
               </h1>
               <p style={{ fontFamily: "Montserrat, sans-serif", fontSize: 16, fontWeight: 700, color: "#c78c3c", margin: "8px 0" }}>
                 TEMA: ÍNTEGROS
@@ -47,7 +47,7 @@ const Index = () => {
             {/* Footer */}
             <footer className="py-16 mt-12 border-t border-border text-center">
               <p className="font-heading text-lg font-bold text-primary mb-1">
-                III Campori de Líderes – APV
+                III Campori de Líderes de Desbravadores e Aventureiros – APV
               </p>
               <p className="text-muted-foreground text-sm">
                 Associação Paulista do Vale · 09 a 12 de outubro de 2026 · Catre, Analândia-SP

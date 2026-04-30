@@ -54,10 +54,10 @@ export function HeroSection() {
           <p className="font-heading text-secondary font-bold text-xs sm:text-sm tracking-[0.2em] sm:tracking-[0.3em] uppercase mb-3 sm:mb-4">
             Associação Paulista do Vale
           </p>
-          <h1 className="font-heading text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-black text-primary-foreground mb-3 sm:mb-4 leading-tight">
-            III CAMPORI
+          <h1 className="font-heading text-2xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-black text-primary-foreground mb-3 sm:mb-4 leading-tight">
+            III CAMPORI DE LÍDERES
             <br />
-            <span className="text-secondary">DE LÍDERES</span>
+            <span className="text-secondary text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl">DE DESBRAVADORES E AVENTUREIROS</span>
           </h1>
           <div className="inline-block bg-secondary/20 border border-secondary/40 rounded-lg px-4 sm:px-6 py-2 sm:py-3 mb-4 sm:mb-6">
             <p className="font-heading text-primary-foreground/90 text-base sm:text-xl md:text-2xl font-bold tracking-wide">
