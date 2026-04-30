@@ -297,6 +297,19 @@ export default function Agenda() {
           <div className="bg-primary/5 border border-primary/20 rounded-xl p-5 text-center">
             <p className="font-heading font-bold text-primary text-lg">Anexos</p>
             <p className="font-heading text-secondary text-sm mt-1">AGENDA ANUAL DESBRAVADORES — ASSOCIAÇÃO PAULISTA DO VALE</p>
+
+            <div className="mt-6 flex flex-col items-center gap-3">
+              <div className="bg-card border-2 border-secondary/40 rounded-2xl p-4 shadow-lg">
+                <img
+                  src={anexosQrCode}
+                  alt="QR Code de acesso aos anexos"
+                  className="w-48 h-48 sm:w-56 sm:h-56 object-contain"
+                />
+              </div>
+              <p className="font-heading font-semibold text-primary text-sm">
+                Escaneie para acessar os anexos
+              </p>
+            </div>
           </div>
         </section>
 
