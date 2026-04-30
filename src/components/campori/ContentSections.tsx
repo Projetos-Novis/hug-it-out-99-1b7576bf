@@ -326,9 +326,9 @@ export function ContentSections() {
           headers={["Código", "Descrição", "Pts"]}
           rows={[
             ["C3", "Ano Bíblico – Atualizado até 30/06/26. ≥80% = 50pts; 50-79% = 25pts; <50% = 0pts.", "50"],
-            ["C4", "Curso de Leitura – Livro CONTAGEM REGRESSIVA concluído até 1 de maio a 31 de agosto de 2026  ≥80% = 100 pts; 50-79% = 50 pts; <50% = 0 pts.", "50"],
+            ["C4", "Curso de Leitura – Livro CONTAGEM REGRESSIVA concluído até 30/07/2026 ≥80% = 100 pts; 50-79% = 50 pts; <50% = 0 pts.", "50"],
             ["C5", "PG das Novas Gerações - Cada membro participar/liderar PG de março a 31/julho. Anexar foto.", "100"],
-            ["C6", "Visita a Desbravadores/Aventureiros – Escolher 3 Desbravadores/Aventureiros e visitar 2x cada (abril-jun e jul-set). Anexar lista.", "100"],
+            ["C6", "Visita a Desbravadores/Aventureiros – Escolher 3 Desbravadores/Aventureiros e visitar 2x cada (mai-jun e jul-set). Anexar lista.", "100"],
           ]}
         />
 
@@ -499,7 +499,7 @@ export function ContentSections() {
             { date: "07-09/07/2026", task: "Período de inscrições (apenas 3 dias!)", tag: "Inscrição" },
             { date: "15/07/2026", task: "Secretaria On-Line no SGC (A2)", tag: "Pré-Requisito" },
             { date: "01-20/07/2026", task: "Troca de nomes dos inscritos", tag: "Inscrição" },
-            { date: "31/08/2026", task: "Conclusão do Curso de Leitura – livro CONTAGEM REGRESSIVA (C4)", tag: "Pré-Requisito" },
+            { date: "30/07/2026", task: "Conclusão do Curso de Leitura – livro CONTAGEM REGRESSIVA (C4)", tag: "Pré-Requisito" },
             { date: "31/07/2026", task: "PG das Novas Gerações concluído (C5)", tag: "Pré-Requisito" },
             { date: "31/07/2026", task: "Suporte a Clubes concluído (T8)", tag: "Pré-Requisito" },
             { date: "Julho/2026", task: "Missão Calebe (R12)", tag: "Pré-Requisito" },
