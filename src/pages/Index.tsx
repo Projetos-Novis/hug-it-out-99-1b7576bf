@@ -55,6 +55,17 @@ const Index = () => {
               <p className="text-muted-foreground text-xs mt-2 font-heading font-semibold tracking-wide uppercase">
                 Tema: Íntegros
               </p>
+              <p className="text-muted-foreground text-xs mt-4">
+                Desenvolvido por{" "}
+                <a
+                  href="https://www.novismarketing.com.br"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-heading font-semibold text-primary hover:text-secondary transition-colors"
+                >
+                  Novis Marketing
+                </a>
+              </p>
             </footer>
           </div>
         </div>

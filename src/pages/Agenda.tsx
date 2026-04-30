@@ -316,6 +316,17 @@ export default function Agenda() {
         <footer className="py-12 mt-10 border-t border-border text-center">
           <p className="font-heading text-base font-bold text-primary mb-1">Agenda Desbravadores APV 2026</p>
           <p className="text-muted-foreground text-sm">Associação Paulista do Vale</p>
+          <p className="text-muted-foreground text-xs mt-4">
+            Desenvolvido por{" "}
+            <a
+              href="https://www.novismarketing.com.br"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-heading font-semibold text-primary hover:text-secondary transition-colors"
+            >
+              Novis Marketing
+            </a>
+          </p>
         </footer>
       </main>
     </div>
