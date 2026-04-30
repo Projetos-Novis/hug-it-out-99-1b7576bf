@@ -54,7 +54,7 @@ export const calendarData: CalendarMonth[] = [
   },
   {
     month: "Julho",
-    events: [{ date: "7 a 9", title: "Inscrição III Campori de Líderes APV" }],
+    events: [{ date: "7 a 9", title: "Inscrição III Campori de Líderes de Desbravadores e Aventureiros - APV" }],
   },
   {
     month: "Agosto",
@@ -75,7 +75,7 @@ export const calendarData: CalendarMonth[] = [
   },
   {
     month: "Outubro",
-    events: [{ date: "09 a 12", title: "III Campori de Líderes APV" }],
+    events: [{ date: "09 a 12", title: "III Campori de Líderes de Desbravadores e Aventureiros - APV" }],
   },
   {
     month: "Novembro",
