@@ -109,7 +109,7 @@ export function HeroSection() {
             className="inline-flex items-center gap-2 bg-secondary hover:bg-campori-earth-dark text-secondary-foreground font-heading font-bold text-sm sm:text-base px-5 sm:px-6 py-3 rounded-lg transition-colors"
           >
             <CalendarDays className="w-4 h-4 sm:w-5 sm:h-5" />
-            Agenda Desbravadores APV 2026
+            Agenda APV 2026
           </Link>
         </motion.div>
       </div>
