@@ -17,7 +17,7 @@ export function HeroSection() {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-primary topo-pattern overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center bg-primary topo-pattern overflow-hidden pb-32 sm:pb-40 pt-20 sm:pt-24">
       {/* Decorative elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <Mountain className="absolute bottom-0 left-0 w-64 h-64 text-primary-foreground/5" />
@@ -67,7 +67,7 @@ export function HeroSection() {
           <p className="text-primary-foreground/70 text-sm sm:text-lg md:text-xl mb-1 sm:mb-2 font-body">
             09 a 12 de outubro de 2026 · Catre, Analândia-SP
           </p>
-          <p className="text-primary-foreground/50 text-xs sm:text-base mb-8 sm:mb-10 font-body">
+          <p className="text-primary-foreground/50 text-xs sm:text-base mb-4 sm:mb-6 font-body">
             De Líder para Líderes · 1.000 participantes
           </p>
         </motion.div>
