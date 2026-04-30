@@ -122,8 +122,8 @@ export const pontuacaoData: PontuacaoCategory[] = [
         points: 800,
         detail: [
           "Etapa 1 – Planejamento detalhado para cumprimento de requisito das classes do ano: 200 pts",
-          "Etapa 2 – Lista dos desbravadores com classes do ano e classes anteriores pendentes: 100 pts",
-          "Etapa 3 – Planejamento detalhado para cumprimento de requisito das classes anteriormente não realizadas: 100 pts",
+          "Etapa 2 – Ter uma lista dos desbravadores com as seguintes informações: Qual classe cada um deverá realizar no decorrer de 2026 e quais classes não realizadas anteriormente ainda lhe faltam. (Apresentar ao regional) Anexo 4: 100 pts",
+          "Etapa 3 – Ter um planejamento detalhado para cumprimento de requisito de Classes anteriormente não realizadas: 100 pts",
           "Etapa 4 – Percentual investido nas classes do ano: 90-100% = 400 pts | 75% = 300 pts | 50% = 200 pts | abaixo de 50% = sem pontuação",
           "Ponto bônus por investir 10% dos desbravadores em classes anteriormente não realizadas: 100 pts",
         ],
