@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { ArrowLeft, Calendar } from "lucide-react";
+import { ArrowLeft, Calendar, ListChecks, Award, FileText } from "lucide-react";
 import { calendarData } from "@/components/agenda/agendaData";
+import { agendaSections, padraoData, premiacoesData } from "@/components/agenda/agendaContent";
 
 export default function Agenda() {
   return (
@@ -55,8 +56,8 @@ export default function Agenda() {
         </div>
       </header>
 
-      {/* Calendário Anual */}
       <main className="max-w-5xl mx-auto px-4 sm:px-6 py-8">
+        {/* Calendário Anual */}
         <section id="calendario" className="scroll-mt-20">
           <div className="flex items-center gap-3 mb-6">
             <Calendar className="w-6 h-6 text-secondary shrink-0" />
@@ -79,6 +80,183 @@ export default function Agenda() {
                 </ul>
               </div>
             ))}
+          </div>
+        </section>
+
+        {/* Índice das seções de pontuação */}
+        <section id="indice" className="scroll-mt-20 mt-14">
+          <div className="flex items-center gap-3 mb-6">
+            <ListChecks className="w-6 h-6 text-secondary shrink-0" />
+            <h2 className="font-heading font-bold text-xl sm:text-2xl text-primary">
+              Desbravadores 2026 — Índice
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {agendaSections.map((s) => (
+              <a
+                key={s.id}
+                href={`#${s.id}`}
+                className="group flex items-center gap-3 p-3 sm:p-4 rounded-lg bg-card hover:bg-primary hover:text-primary-foreground transition-all border border-border hover:border-primary"
+              >
+                <span className="font-heading text-sm font-bold text-secondary group-hover:text-secondary-foreground bg-secondary/10 group-hover:bg-secondary/30 w-9 h-9 rounded flex items-center justify-center shrink-0">
+                  {s.number}
+                </span>
+                <span className="font-heading font-semibold text-base">{s.title}</span>
+              </a>
+            ))}
+            <a
+              href="#padrao-premiacoes"
+              className="group flex items-center gap-3 p-3 sm:p-4 rounded-lg bg-card hover:bg-primary hover:text-primary-foreground transition-all border border-border hover:border-primary"
+            >
+              <span className="font-heading text-sm font-bold text-secondary group-hover:text-secondary-foreground bg-secondary/10 group-hover:bg-secondary/30 w-9 h-9 rounded flex items-center justify-center shrink-0">
+                <Award className="w-4 h-4" />
+              </span>
+              <span className="font-heading font-semibold text-base">Padrão e Premiações</span>
+            </a>
+            <a
+              href="#relatorios"
+              className="group flex items-center gap-3 p-3 sm:p-4 rounded-lg bg-card hover:bg-primary hover:text-primary-foreground transition-all border border-border hover:border-primary"
+            >
+              <span className="font-heading text-sm font-bold text-secondary group-hover:text-secondary-foreground bg-secondary/10 group-hover:bg-secondary/30 w-9 h-9 rounded flex items-center justify-center shrink-0">
+                <FileText className="w-4 h-4" />
+              </span>
+              <span className="font-heading font-semibold text-base">Datas do Relatório SGC</span>
+            </a>
+          </div>
+        </section>
+
+        {/* Seções de pontuação */}
+        {agendaSections.map((section) => (
+          <section key={section.id} id={section.id} className="scroll-mt-20 mt-14">
+            <div className="flex items-start gap-3 mb-4">
+              <span className="font-heading font-black text-2xl text-secondary leading-none shrink-0 mt-1">
+                {section.number}.
+              </span>
+              <div>
+                <h2 className="font-heading font-bold text-xl sm:text-2xl text-primary">
+                  {section.title}
+                </h2>
+                {section.verse && (
+                  <p className="text-muted-foreground italic text-sm mt-1">{section.verse}</p>
+                )}
+              </div>
+            </div>
+
+            <div className="space-y-3">
+              {section.items.map((item, i) => (
+                <article key={i} className="bg-card border border-border rounded-xl p-4 sm:p-5">
+                  <div className="flex flex-wrap items-start justify-between gap-3 mb-2">
+                    <h3 className="font-heading font-bold text-primary text-base sm:text-lg flex-1">
+                      {item.code && <span className="text-secondary mr-2">{item.code}</span>}
+                      {item.text}
+                    </h3>
+                    {item.points && (
+                      <span className="font-heading font-bold text-xs sm:text-sm bg-secondary/15 text-secondary px-3 py-1 rounded-full whitespace-nowrap">
+                        {item.points}
+                      </span>
+                    )}
+                  </div>
+
+                  {item.details && item.details.length > 0 && (
+                    <ul className="mt-3 space-y-1.5 pl-4 border-l-2 border-secondary/30">
+                      {item.details.map((d, j) => (
+                        <li key={j} className="text-sm text-foreground leading-relaxed">{d}</li>
+                      ))}
+                    </ul>
+                  )}
+
+                  {item.notes && item.notes.length > 0 && (
+                    <div className="mt-3 space-y-2 text-sm text-muted-foreground leading-relaxed">
+                      {item.notes.map((n, j) => (
+                        <p key={j}>{n}</p>
+                      ))}
+                    </div>
+                  )}
+                </article>
+              ))}
+            </div>
+          </section>
+        ))}
+
+        {/* Padrão e Premiações */}
+        <section id="padrao-premiacoes" className="scroll-mt-20 mt-14">
+          <div className="flex items-center gap-3 mb-6">
+            <Award className="w-6 h-6 text-secondary shrink-0" />
+            <h2 className="font-heading font-bold text-xl sm:text-2xl text-primary">
+              Padrão e Premiações do Ano
+            </h2>
+          </div>
+
+          <div className="bg-card border border-border rounded-xl p-4 sm:p-5 mb-4">
+            <h3 className="font-heading font-bold text-primary mb-3">PADRÃO</h3>
+            <ul className="space-y-1.5">
+              {padraoData.map((p, i) => (
+                <li key={i} className="text-sm text-foreground">{p}</li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="bg-card border border-border rounded-xl p-4 sm:p-5 mb-4">
+            <h3 className="font-heading font-bold text-primary mb-3">PREMIAÇÕES DO ANO</h3>
+            <p className="text-sm text-foreground mb-3">{premiacoesData.intro}</p>
+            <p className="font-heading font-semibold text-secondary text-sm mb-2">Padrão Anual</p>
+            <ul className="space-y-1 mb-3">
+              {premiacoesData.padraoAnual.map((p, i) => (
+                <li key={i} className="text-sm text-foreground">{p}</li>
+              ))}
+            </ul>
+            <p className="text-sm text-muted-foreground mb-2">{premiacoesData.importante}</p>
+            <p className="font-heading font-semibold text-secondary text-sm">{premiacoesData.inscricao}</p>
+          </div>
+
+          <div className="bg-card border border-border rounded-xl p-4 sm:p-5 mb-4">
+            <h3 className="font-heading font-bold text-primary mb-3">Excelência por área de pontuação</h3>
+            <p className="text-sm text-foreground">{premiacoesData.excelencia}</p>
+          </div>
+
+          <div className="bg-card border border-border rounded-xl p-4 sm:p-5 mb-4">
+            <h3 className="font-heading font-bold text-primary mb-3">Destaques por categoria (OSCAR)</h3>
+            <p className="text-sm text-muted-foreground mb-2">Premiação para os clubes em destaque nas seguintes categorias:</p>
+            <ul className="space-y-1.5 list-disc pl-5">
+              {premiacoesData.oscar.map((o, i) => (
+                <li key={i} className="text-sm text-foreground">{o}</li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="bg-card border border-border rounded-xl p-4 sm:p-5">
+            <h3 className="font-heading font-bold text-primary mb-3">EVENTOS REGIONAIS</h3>
+            <ul className="space-y-1">
+              {premiacoesData.eventosRegionais.map((e, i) => (
+                <li key={i} className="text-sm text-foreground">{e}</li>
+              ))}
+            </ul>
+          </div>
+        </section>
+
+        {/* Relatórios */}
+        <section id="relatorios" className="scroll-mt-20 mt-14">
+          <div className="flex items-center gap-3 mb-6">
+            <FileText className="w-6 h-6 text-secondary shrink-0" />
+            <h2 className="font-heading font-bold text-xl sm:text-2xl text-primary">
+              Datas do Relatório SGC
+            </h2>
+          </div>
+          <div className="bg-card border border-border rounded-xl p-4 sm:p-5">
+            <ul className="space-y-1.5 mb-3">
+              {premiacoesData.relatorios.map((r, i) => (
+                <li key={i} className="text-sm text-foreground font-heading font-semibold">{r}</li>
+              ))}
+            </ul>
+            <p className="text-sm text-muted-foreground">{premiacoesData.relatorioObs}</p>
+          </div>
+        </section>
+
+        {/* Anexos */}
+        <section id="anexos" className="scroll-mt-20 mt-14">
+          <div className="bg-primary/5 border border-primary/20 rounded-xl p-5 text-center">
+            <p className="font-heading font-bold text-primary text-lg">Anexos</p>
+            <p className="font-heading text-secondary text-sm mt-1">AGENDA ANUAL DESBRAVADORES — ASSOCIAÇÃO PAULISTA DO VALE</p>
           </div>
         </section>
 
