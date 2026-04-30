@@ -7,7 +7,7 @@ export function ContentSections() {
       {/* FILOSOFIA & OBJETIVO */}
       <SectionCard id="filosofia" title="Filosofia & Objetivo" icon={sections[1].icon}>
         <p className="text-lg text-muted-foreground mb-6 italic">
-          "De Líder para Líderes" — Um Campori por Regiões, promovendo companheirismo e formação prática.
+          "De Líder para Líderes"&nbsp; Um Campori por Regiões, promovendo companheirismo e formação prática.
         </p>
         <h3 className="font-heading font-bold text-lg text-primary mb-3">Filosofia do III Campori de Líderes / APV</h3>
         <ol className="list-decimal pl-5 space-y-2 text-foreground/90 mb-6">
@@ -113,10 +113,9 @@ export function ContentSections() {
       <SectionCard id="participacao-lider" title="Como o Líder ou Aspirante Participa" icon={sections[5].icon}>
         <p className="text-foreground/90">O Líder, Líder Máster, Líder Máster Avançado ou aspirante deve:</p>
         <ul className="list-disc pl-5 space-y-1 mt-2 text-foreground/90">
-          <li>Ser membro de um Clube de Desbravadores;</li>
           <li>Estar matriculado e com o Seguro Anual 2026 ativo;</li>
           <li>Possuir 16 anos completos até 30/06/2026;</li>
-          <li>Ser membro ativo em um dos Clubes de Desbravadores na APV.</li>
+          <li>Ser membro ativo em um dos Clubes da MDA na APV.</li>
         </ul>
       </SectionCard>
 
