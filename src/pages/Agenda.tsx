@@ -60,19 +60,33 @@ export default function Agenda() {
             <ArrowLeft className="w-4 h-4" />
             Voltar ao Campori
           </Link>
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-            <p className="font-heading text-secondary font-bold text-xs tracking-[0.2em] uppercase mb-2">
-              Associação Paulista do Vale
-            </p>
-            <h1 className="font-heading text-2xl sm:text-4xl md:text-5xl font-black leading-tight mb-2">
-              Agenda Desbravadores
-              <br />
-              <span className="text-secondary">APV 2026</span>
-            </h1>
-            <p className="text-primary-foreground/70 text-sm sm:text-base max-w-2xl">
-              Painel com calendário anual, critérios de pontuação, eventos, premiações e prazos oficiais dos Desbravadores APV 2026.
-            </p>
-          </motion.div>
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
+            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
+              <p className="font-heading text-secondary font-bold text-xs tracking-[0.2em] uppercase mb-2">
+                Associação Paulista do Vale
+              </p>
+              <h1 className="font-heading text-2xl sm:text-4xl md:text-5xl font-black leading-tight mb-2">
+                Agenda Desbravadores
+                <br />
+                <span className="text-secondary">APV 2026</span>
+              </h1>
+              <p className="text-primary-foreground/70 text-sm sm:text-base max-w-2xl">
+                Painel com calendário anual, critérios de pontuação, eventos, premiações e prazos oficiais dos Desbravadores APV 2026.
+              </p>
+            </motion.div>
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.9 }} 
+              animate={{ opacity: 1, scale: 1 }} 
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="shrink-0"
+            >
+              <img 
+                src="https://rmetppilvfrxosvxzhgj.supabase.co/storage/v1/object/public/message-attachments/c3282a3e-4626-4299-be47-5fdd33267ae5/1777507634362_ghng91_de07f-logoiasd-preto2.png" 
+                alt="Logo IASD" 
+                className="h-10 sm:h-12 w-auto invert opacity-80"
+              />
+            </motion.div>
+          </div>
         </div>
       </header>
 
