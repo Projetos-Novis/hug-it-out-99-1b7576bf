@@ -103,22 +103,22 @@ export interface PontuacaoCategory {
 export const pontuacaoData: PontuacaoCategory[] = [
   {
     id: "organizacao",
-    title: "Organização do Clube",
+    title: "1. Organização do Clube",
     items: [
-      { name: "Atualização do cadastro no SGC até 19/03/2026", points: 400 },
-      { name: "Seguro anual atualizado até 19/03/2026", points: 400 },
-      { name: "Secretaria do clube organizada e entrega da pasta na APV até 15/03/2026", points: 400 },
-      { name: "Planejamento anual do clube aprovado pela comissão da igreja até 19/03/2026", points: 300 },
-      { name: "Planejamento financeiro do clube aprovado pela comissão da igreja até 19/03/2026", points: 300 },
-      { name: "Antecedentes criminais", points: 200 },
+      { name: "1A. Atualização do cadastro no SGC até 19/03/2026", points: 400 },
+      { name: "1B. Seguro anual atualizado até 19/03/2026", points: 400 },
+      { name: "1C. Secretaria do clube organizada (pasta, ficha médica, autorizaações) Entrega da pasta na APV até 15/03/2026", points: 400 },
+      { name: "1D. Planejamento anual do clube aprovado pela comissão da igreja até 19/03/2026", points: 300 },
+      { name: "1E. Planejamento financeiro do clube aprovado pela comissão da igreja até 19/03/2026", points: 300 },
+      { name: "1F. Antecedentes criminais", points: 200 },
     ],
   },
   {
     id: "classes",
-    title: "Classes e Desenvolvimento",
+    title: "2. Classes e Desenvolvimento",
     items: [
       {
-        name: "Classes Regulares e Avançadas",
+        name: "2A. Classes Regulares e Avançadas (em 4 etapas abaixo)",
         points: 800,
         detail: [
           "Etapa 1 – Planejamento detalhado para cumprimento de requisito das classes do ano: 200 pts",
