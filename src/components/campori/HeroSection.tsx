@@ -82,7 +82,7 @@ export function HeroSection() {
             href="#indice"
             className="inline-flex items-center gap-2 bg-secondary hover:bg-campori-earth-dark text-secondary-foreground font-heading font-bold text-sm sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-lg transition-colors"
           >
-            Ir para o Índice
+            Índice
             <ChevronDown className="w-5 h-5" />
           </a>
 
