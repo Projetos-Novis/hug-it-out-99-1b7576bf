@@ -12,7 +12,7 @@ export interface Section {
 }
 
 export const sections: Section[] = [
-  { id: "hero", title: "De Líder para Líderes", icon: Heart },
+  { id: "lider-para-lideres", title: "De Líder para Líderes", icon: Heart },
   { id: "filosofia", title: "Filosofia & Objetivo", icon: BookOpen },
   { id: "info-gerais", title: "Informações Gerais", icon: Compass },
   { id: "onibus", title: "Contratação de Ônibus", icon: Bus },

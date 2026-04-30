@@ -3,7 +3,7 @@ import { Heart } from "lucide-react";
 
 export function IntroSection() {
   return (
-    <section id="hero" className="py-10 sm:py-16 px-3 sm:px-6 scroll-mt-20">
+    <section id="lider-para-lideres" className="py-10 sm:py-16 px-3 sm:px-6 scroll-mt-20">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
