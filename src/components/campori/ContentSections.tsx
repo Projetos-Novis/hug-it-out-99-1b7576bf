@@ -6,13 +6,6 @@ export function ContentSections() {
     <div className="space-y-4">
       {/* FILOSOFIA & OBJETIVO */}
       <SectionCard id="filosofia" title="Filosofia & Objetivo" icon={sections[1].icon}>
-        <div className="mb-8 overflow-hidden rounded-xl border border-border bg-muted/30">
-          <img 
-            src="https://rmetppilvfrxosvxzhgj.supabase.co/storage/v1/object/public/message-attachments/c3282a3e-4626-4299-be47-5fdd33267ae5/1777508967452_3tdkb8_image.png" 
-            alt="Informações Complementares" 
-            className="w-full h-auto object-contain"
-          />
-        </div>
         <p className="text-lg text-muted-foreground mb-6 italic">
           "De Líder para Líderes" — Um Campori por Regiões, promovendo companheirismo e formação prática.
         </p>
