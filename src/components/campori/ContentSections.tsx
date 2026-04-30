@@ -140,7 +140,7 @@ export function ContentSections() {
         <div className="grid sm:grid-cols-2 gap-4 mb-4">
           <div className="bg-campori-amber/10 border border-campori-amber/30 rounded-lg p-4">
             <p className="font-heading font-bold text-xs uppercase tracking-wide text-campori-earth-dark">Valor</p>
-            <p className="font-heading font-bold text-xl text-foreground">A definir</p>
+            <p className="font-heading font-bold text-xl text-foreground">R$ 270,00</p>
           </div>
           <div className="bg-campori-amber/10 border border-campori-amber/30 rounded-lg p-4">
             <p className="font-heading font-bold text-xs uppercase tracking-wide text-campori-earth-dark">Data da Inscrição</p>
@@ -170,7 +170,7 @@ export function ContentSections() {
 
         <h3 className="font-heading font-bold text-base text-primary mt-4 mb-2">Troca de Nomes</h3>
         <p className="text-foreground/90">
-          Trocas disponíveis somente entre <strong>01 a 20 de julho de 2026</strong>, e apenas de nomes de uma mesma Região já inscrita. Após essa data, nenhuma troca será permitida.
+          Trocas disponíveis somente entre <strong>01 a 20 de setembro de 2026</strong>, e apenas de nomes de uma mesma Região já inscrita. Após essa data, nenhuma troca será permitida.
         </p>
       </SectionCard>
 
@@ -179,9 +179,9 @@ export function ContentSections() {
         <ul className="space-y-3 text-foreground/90">
           <li><strong className="text-primary">Coordenadores e Staff:</strong> Inscrição feita diretamente no MDA-APV.</li>
           <li><strong className="text-primary">Pastor Distrital:</strong> Inscrição feita diretamente no MDA-APV.</li>
-          <li><strong className="text-primary">Família Pastoral:</strong> Esposa e filhos (16+ anos), membros ativos de Clube DBV, pagam valor integral.</li>
+          <li><strong className="text-primary">Família Pastoral:</strong> Esposa e filhos (16+ anos), membros ativos de Clube da MDA, pagam valor integral.</li>
           <li><strong className="text-primary">Filhos de Pastores &lt;16 anos:</strong> Não poderão participar.</li>
-          <li><strong className="text-primary">Cozinheiras:</strong> Até 2 isentas por Região. A partir da 3ª, paga valor integral. Devem ser adventistas, 18+ anos, incluídas no Seguro Anual 2026 de um clube DBV.</li>
+          <li><strong className="text-primary">Cozinheiras:</strong> Até 2 isentas por Região. A partir da 3ª, paga valor integral. Devem ser adventistas, 18+ anos, incluídas no Seguro Anual 2026 de um da MDA.</li>
         </ul>
       </SectionCard>
 
