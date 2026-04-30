@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, Calendar, ListChecks, Award, FileText } from "lucide-react";
 import { calendarData } from "@/components/agenda/agendaData";
 import { agendaSections, padraoData, premiacoesData } from "@/components/agenda/agendaContent";
+import anexosQrCode from "@/assets/anexos-qrcode.png";
 
 export default function Agenda() {
   return (
