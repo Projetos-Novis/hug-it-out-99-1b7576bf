@@ -317,7 +317,7 @@ export function ContentSections() {
           headers={["Código", "Descrição", "Pts"]}
           rows={[
             ["A1", "Planejamento Anual da Região – Enviar até 30/05/26 o planejamento detalhado com atividades, responsáveis e locais. Anexar no Ranking.", "100"],
-            ["A2", "Secretaria On-Line no SGC – Inscrever todos os membros no módulo Fábrica de Líderes com dados atualizados até 15/07/26.", "100"],
+            ["A2", "Secretaria On-Line no SGC – Inscrever todos os membros da Região com os dados atualizados até 15/07/26.", "100"],
           ]}
         />
 
@@ -478,8 +478,8 @@ export function ContentSections() {
           rows={[
             ["E22", "Batismo no Campori – Levar ao menos 1 pessoa para batismo. Ficha batismal preenchida e assinada pelo Pastor.", "50"],
             ["E23", "Investidura em Líder 25/08/2025, Máster\u00A026/07/2025 \u00A0ou Máster Avançado\u00A0 26/06/2025 – Trazer pelo menos 1 pessoa. Cartão virtual 100% concluído\u00A0", "50"],
-            ["E24", "Uniforme Oficial – Usado na abertura, investidura e sábado. 100% com uniforme completo (boné opcional) e faixa de especialidades.", "25"],
-            ["E25", "Uniforme do Campo (APV) – 100% com uniforme para avaliação de Ordem Unida e ações externas.", "25"],
+            ["E24", "Uniforme de Gala – Usado na investidura e sábado. 100% com uniforme completo (boné opcional) e faixa de especialidades.", "25"],
+            ["E25", "Uniforme do Campo (APV) – 100% com uniforme para avaliação da Abertura e Ordem Unida.", "25"],
             ["E26", "Grito de Guerra – Gritar o BRADO em momento pré-determinado.", "13"],
             ["E27", "Circuito de Atividades – Regiões divididas em equipes. Troféu para menor tempo. Treinar: Bússola, Código Semafórico, Sinais de Pista, Bandeiras, Nós e Amarras, Pioneirias, Primeiros Socorros, Emblemas, História do Clube, Ideais.", "100"],
           ]}
