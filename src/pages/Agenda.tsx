@@ -87,15 +87,15 @@ export default function Agenda() {
               />
               <div className="h-6 w-[1px] bg-primary-foreground/20" />
               <img 
-                src="https://rmetppilvfrxosvxzhgj.supabase.co/storage/v1/object/public/message-attachments/c3282a3e-4626-4299-be47-5fdd33267ae5/1777507740748_jehh4y_D3.png" 
-                alt="Logo Desbravadores" 
+                src="https://rmetppilvfrxosvxzhgj.supabase.co/storage/v1/object/public/message-attachments/c3282a3e-4626-4299-be47-5fdd33267ae5/1777507634362_ghng91_de07f-logoiasd-preto2.png" 
+                alt="Logo IASD" 
                 className="h-10 sm:h-12 w-auto opacity-70"
               />
               <div className="h-6 w-[1px] bg-primary-foreground/20" />
               <img 
-                src="https://rmetppilvfrxosvxzhgj.supabase.co/storage/v1/object/public/message-attachments/c3282a3e-4626-4299-be47-5fdd33267ae5/1777507634362_ghng91_de07f-logoiasd-preto2.png" 
-                alt="Logo IASD" 
-                className="h-10 sm:h-12 w-auto invert opacity-70"
+                src="https://rmetppilvfrxosvxzhgj.supabase.co/storage/v1/object/public/message-attachments/c3282a3e-4626-4299-be47-5fdd33267ae5/1777507740748_jehh4y_D3.png" 
+                alt="Logo Desbravadores" 
+                className="h-10 sm:h-12 w-auto opacity-70"
               />
             </motion.div>
           </div>
