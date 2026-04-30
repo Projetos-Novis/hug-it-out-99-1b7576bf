@@ -337,7 +337,7 @@ export function ContentSections() {
           headers={["Código", "Descrição", "Pts"]}
           rows={[
             ["T7", "Curso de Diretoria Básico/Avançado e/ou Capitães e Conselheiros. ≥80% = 50pts; 50-79% = 25pts; <50% = 0pts. Anexar relatório.", "50"],
-            ["T8", "Suporte a Clubes – Participar de 2 atividades em diferentes clubes da Região até 31/07. Anexar foto.", "100"],
+            ["T8", "Suporte a Clubes – Participar de 2 atividades em diferentes clubes da Região até 05/10/2026. Anexar foto.", "100"],
             ["T9", "Reunião de participantes da Região – Participar de 2 reuniões com equipe regional. Anexar foto.", "50"],
             ["T10", "Visita do Coordenador à Região – Receber visita de um Coordenador da APV. Anexar foto.", "50"],
             ["T11", "Visita do Pastor Distrital – Receber visita do Pastor em evento/reunião. Anexar foto.", "50"],
@@ -349,9 +349,9 @@ export function ContentSections() {
           headers={["Código", "Descrição", "Pts"]}
           rows={[
             ["R12", "Calebe de Lenço – Mínimo 20 membros participando/apoiando Missão Calebe em julho. Anexar foto.", "50"],
-            ["R13", "DBV Por um Dia – Participar na execução e organização. Anexar relatório com lista, clubes e novos DBVs.", "50"],
-            ["R14", "Classe Bíblica DBV – Cada clube com funcionamento semanal a partir de abril/2026. Dar suporte às classes. Anexar fotos.", "50"],
-            ["R15", "Líderes Ativos – Participar uniformizados da Semana Santa e Impacto Esperança. Anexar mosaico de fotos.", "63"],
+            ["R13", "DBV e AVT Por um Dia – Participar na execução e organização. Anexar relatório com lista, clubes e novos desbravadores/aventureiros.", "50"],
+            ["R14", "Classe Bíblica DBV/AVT – Cada clube com funcionamento semanal a partir de abril/2026. Dar suporte às classes. Anexar fotos.", "50"],
+            ["R15", "Líderes Ativos – Participar uniformizados da Semana Jovem e do Quebrando o Silêncio. Anexar mosaico de fotos.", "63"],
           ]}
         />
       </SectionCard>
@@ -363,7 +363,7 @@ export function ContentSections() {
           headers={["Código", "Descrição", "Pts"]}
           rows={[
             ["E1", "Pasta da Secretaria – Entregar na chegada: lista de inscritos com contato de emergência, fichas médicas, cópias de identidade, contrato do ônibus e dados dos motoristas.", "50"],
-            ["E2", "Pontualidade – Cada atraso ou não comparecimento = perda de 10 pts (máx. 50 pts).", "50"],
+            ["E2", "Pontualidade – Cada atraso ou não comparecimento nos eventos = perda de 10 pts (máx. 50 pts).", "50"],
             ["E3", "Disciplina – Todos iniciam com 50 pts. Perda por indisciplina. Falta grave pode custar até 1.000 pts ou retirada do Campori.", "50"],
           ]}
         />
@@ -377,7 +377,7 @@ export function ContentSections() {
             ["E6", "Barracas Alinhadas – Alinhadas, arrumadas e em ordem.", "25"],
             ["E7", "Móveis de Campanha – Pelo menos 3 móveis de pioneiria (inclui varal).", "25"],
             ["E8", "Bandeiras e Mastros – Brasil, São Paulo, Desbravadores e Região nos mastros.", "25"],
-            ["E9", "Bandeiras dos Clubes DBV da Região em mastros criativos.", "25"],
+            ["E9", "Bandeiras dos Clubes da MDA da Região em mastros criativos.", "25"],
             ["E10", "Limpeza do Acampamento – Sempre limpo com local para lixo.", "25"],
             ["E11", "Quadro de Nós – Nós de Amigo a Guia exposto no acampamento.", "50"],
             ["E12", "Histórico da Região – Expor história por escrito e em fotos.", "50"],
@@ -501,7 +501,7 @@ export function ContentSections() {
             { date: "01-20/07/2026", task: "Troca de nomes dos inscritos", tag: "Inscrição" },
             { date: "30/07/2026", task: "Conclusão do Curso de Leitura – livro CONTAGEM REGRESSIVA (C4)", tag: "Pré-Requisito" },
             { date: "31/07/2026", task: "PG das Novas Gerações concluído (C5)", tag: "Pré-Requisito" },
-            { date: "31/07/2026", task: "Suporte a Clubes concluído (T8)", tag: "Pré-Requisito" },
+            { date: "05/10/2026", task: "Suporte a Clubes concluído (T8)", tag: "Pré-Requisito" },
             { date: "Julho/2026", task: "Missão Calebe (R12)", tag: "Pré-Requisito" },
             { date: "Set/2026", task: "Visitas a Desbravadores concluídas (C6)", tag: "Pré-Requisito" },
             { date: "09/10/2026", task: "Abertura do III Campori de Líderes (6h)", tag: "Evento" },
