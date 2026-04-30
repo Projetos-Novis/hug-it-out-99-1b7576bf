@@ -88,267 +88,158 @@ export const calendarData: CalendarMonth[] = [
 ];
 
 export interface PontuacaoItem {
+  id?: string;
   name: string;
-  points: number;
+  points: string | number;
   detail?: string[];
+  verse?: string;
 }
 
 export interface PontuacaoCategory {
   id: string;
   title: string;
+  verse?: string;
   items: PontuacaoItem[];
-  extra?: string;
 }
 
 export const pontuacaoData: PontuacaoCategory[] = [
   {
     id: "organizacao",
     title: "1. Organização do Clube",
+    verse: "Ensina-nos a contar os nossos dias para que o nosso coração alcance sabedoria. Salmo 90:12",
     items: [
-      { name: "1A. Atualização do cadastro no SGC até 19/03/2026", points: 400 },
-      { name: "1B. Seguro anual atualizado até 19/03/2026", points: 400 },
-      { name: "1C. Secretaria do clube organizada (pasta, ficha médica, autorizaações) Entrega da pasta na APV até 15/03/2026", points: 400 },
-      { name: "1D. Planejamento anual do clube aprovado pela comissão da igreja até 19/03/2026", points: 300 },
-      { name: "1E. Planejamento financeiro do clube aprovado pela comissão da igreja até 19/03/2026", points: 300 },
-      { name: "1F. Antecedentes criminais", points: 200 },
+      { name: "1A - Atualização do Cadastro no SGC - 19/03/2026", points: 400 },
+      { name: "1B - Seguro Anual Atualizado até 19/03/2026", points: 400 },
+      { name: "1C - Secretaria do Clube Organizada (pasta, ficha médica, autorizações). Entrega da Pasta na APV até dia 15/03/26", points: 400 },
+      { name: "1D - Planejamento anual do Clube aprovado pela comissão da igreja até 19/03/2026", points: 300 },
+      { name: "1E - Planejamento financeiro do Clube aprovado pela comissão da igreja até 19/03/2026", points: 300 },
+      { name: "1F - Antecedentes Criminais", points: 200 },
     ],
   },
   {
     id: "classes",
-    title: "2. Classes e Desenvolvimento",
+    title: "2. Classes - Desenvolvimento",
+    verse: "Jesus ia crescendo em sabedoria, estatura e graça diante de Deus e dos homens. Lucas 2:52",
     items: [
       {
-        name: "2A. Classes Regulares e Avançadas (em 4 etapas abaixo)",
+        name: "2A - Classes Regulares e Agrupadas. (em 4 etapas abaixo)",
         points: 800,
         detail: [
-          "Etapa 1 – Planejamento detalhado para cumprimento de requisito das classes do ano: 200 pts",
-          "Etapa 2 – Ter uma lista dos desbravadores com as seguintes informações: Qual classe cada um deverá realizar no decorrer de 2026 e quais classes não realizadas anteriormente ainda lhe faltam. (Apresentar ao regional) Anexo 4: 100 pts",
-          "Etapa 3 – Ter um planejamento detalhado para cumprimento de requisito de Classes anteriormente não realizadas: 100 pts",
-          "Etapa 4 – Percentual investido nas classes do ano: 90-100% = 400 pts | 75% = 300 pts | 50% = 200 pts | abaixo de 50% = sem pontuação",
-          "Ponto bônus por investir 10% dos desbravadores em classes anteriormente não realizadas: 100 pts",
+          "Etapa 01: Ter um planejamento detalhado para cumprimento de requisito de Classes do ano: 200 pts",
+          "Etapa 02: Ter uma lista dos desbravadores com as seguintes informações: Qual classe cada um deverá realizar no decorrer de 2026 e quais classes não realizadas anteriormente ainda lhe faltam. (Apresentar ao regional) Anexo 4: 100 pts",
+          "Etapa 03: Ter um planejamento detalhado para cumprimento de requisito de Classes anteriormente não realizadas: 100 pts",
+          "Etapa 04: Ter de 90% a 100% dos Desbravadores Investidos nas Classes do ano: 400 pts (Ou de acordo com a porcentagem abaixo: 75% = 300 pts | 50% = 200 pts | Abaixo de 50% não pontua)",
+          "Ponto Bônus - Vamos dar 100 pontos para o clube que consiga investir 10% dos desbravadores em classes anteriormente não realizada: 100 pts",
         ],
       },
-      { name: "Classe de Líder, Master e Líder Master Avançado", points: 200 },
-      { name: "Classes Agrupadas 16 anos acima", points: 400 },
+      {
+        id: "lideranca",
+        name: "2B - Classe de Líder, Master e Líder Master Avançado (APV)",
+        points: 200,
+        detail: [
+          "100% da Diretoria Fazendo o Cartão (L, LM ou LMA): 200 pts",
+          "75% da Diretoria Fazendo o Cartão (L, LM ou LMA): 150 pts",
+          "50% da diretoria Fazendo o Cartão (L, LM ou LMA): 100 pts",
+        ],
+      },
+      {
+        id: "agrupadas-16",
+        name: "2C - Classe Agrupadas 16 anos acima",
+        points: 400,
+        detail: [
+          "100% dos que precisam, fazendo o Cartão: 400 pts",
+          "75% dos que precisam, fazendo o Cartão: 300 pts",
+          "50% dos que precisam, fazendo o Cartão: 200 pts",
+        ],
+      },
     ],
   },
   {
     id: "unidades",
-    title: "Sistema de Unidades / Discipulado",
+    title: "3. Sistema de Unidades - Discipulado",
+    verse: "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai e do Filho e do Espírito Santo. Mateus 28:19",
     items: [
-      { name: "Treinamento Básico para Diretoria CTBD Online", points: 200 },
-      { name: "Curso de Capitães regional", points: 100 },
-      { name: "Curso de Conselheiros regional", points: 100 },
+      { name: "3A - Treinamento Básico para Diretoria (CTBD) Online", points: 200 },
+      { name: "3B - Curso de Capitães (regional)", points: 100 },
+      { name: "3C - Curso de Conselheiros (regional)", points: 100 },
       {
-        name: "Conselheiro TOP, avaliação regional",
+        name: "3D - Conselheiro TOP (Avaliação Regional)",
         points: 200,
         detail: [
-          "90% a 100%: 200 pts",
-          "75%: 150 pts",
-          "50%: 100 pts",
+          "90% a 100% dos Conselheiros realizando o programa: 200 pts",
+          "75% dos Conselheiros realizando o programa: 150 pts",
+          "50% dos Conselheiros realizando o programa: 100 pts",
         ],
       },
     ],
   },
   {
     id: "evangelismo",
-    title: "Evangelismo",
+    title: "4. Evangelismo",
+    verse: "E disse-lhes: \"Vão pelo mundo todo e preguem o evangelho a todas as pessoas\". Marcos 16:15",
     items: [
-      { name: "Sábado da Missão Impacto Esperança", points: 100 },
-      { name: "Semana Santa", points: 400 },
-      { name: "Classe Bíblica", points: 300 },
-      { name: "Controle de Desbravadores não batizados", points: 100 },
-      { name: "Semana de Evangelismo do Ministério da Mulher", points: 400 },
-      { name: "Semana Jovem", points: 400 },
-      { name: "Caleb de Lenço", points: 200 },
-      { name: "Sábado Quebrando o Silêncio", points: 100 },
+      { name: "4A - Sábado da Missão - Impacto Esperança", points: 100 },
+      { name: "4B - Semana Santa", points: 400 },
+      { name: "4C - Classe Bíblica. (Início em 12/04/2026)", points: 300 },
+      { name: "4D - Controle de Desbravadores não batizados", points: 100 },
+      { name: "4E - Semana de Evangelismo do Min. Da Mulher", points: 400 },
+      { name: "4F - Semana Jovem", points: 400 },
+      { name: "4G - Caleb de Lenço (diretoria)", points: 200 },
+      { name: "4H - Sábado Quebrando o Silêncio", points: 100 },
       {
-        name: "Semana da Primavera",
+        name: "4I - Semana da Primavera",
         points: 1000,
         detail: [
-          "Planejamento: 200 pts",
-          "Participação: 100 pts",
-          "Visita aos desbravadores não batizados: 300 pts",
-          "Cerimônia batismal: 400 pts",
-          "Obs: clubes com batismo de 5+ desbravadores em setembro recebem o troféu Arthur Spalding",
+          "Etapa 1: Planejamento (Apresentar ao Regional até Agosto/2026): 200 pts",
+          "Etapa 2: Realização da Semana de Oração: 100 pts",
+          "Etapa 3: Visitas Missionárias (pelo menos 1 visita para cada desbravador não batizado): 300 pts",
+          "Etapa 4: Cerimônia Batismal: 400 pts",
         ],
       },
     ],
   },
   {
     id: "eventos",
-    title: "Eventos",
+    title: "5. Eventos",
+    verse: "Agora me está reservada a coroa da justiça, que o Senhor, justo Juiz, me dará naquele dia, e não somente a mim, mas também a todos os que amam a sua vinda. 2 Timóteo 4:8",
     items: [
-      { name: "Participação na Convenção Novas Gerações", points: 300 },
-      { name: "Pregador Mirim", points: 100 },
-      { name: "Desbravadores em Louvor", points: 100 },
-      { name: "Jornada Clube do Livro", points: 200 },
-      { name: "Concurso Bom de Bíblia", points: 200 },
-      { name: "III Campori de Líderes", points: 400 },
-      { name: "Dia Mundial do Desbravador", points: 200 },
-      { name: "Semana do Lenço", points: 200 },
-      { name: "Desbravador por um dia", points: 200 },
-      { name: "Participar dos programas dos Aventureiros da igreja", points: 100 },
-      { name: "Desbravaday", points: 300 },
+      { name: "5A - Participação na Convenção Novas Gerações", points: 200 },
+      { name: "5B - Pregador Mirim (regional, local)", points: 100 },
+      { name: "5C - Desbravadores em Louvor (regional, local)", points: 100 },
+      { name: "5D - Jornada Clube do Livro (Regional, APV)", points: 200 },
+      { name: "5E - Concurso Bom de Bíblia", points: 200 },
+      { name: "5F - III Campori de Líderes", points: 400 },
+      { name: "5G - Dia Mundial do Desbravador (Clube local)", points: 200 },
+      { name: "5H - Semana do lenço (Clube local)", points: 200 },
+      { name: "5I - Desbravador por um dia (Clube local)", points: 200 },
+      { name: "5J - Participar dos programas dos Aventureiros da sua igreja", points: 100 },
+      { name: "5L - Desbravaday (evento regional)", points: 300 },
     ],
   },
   {
     id: "social",
-    title: "Atividades Sociais e Familiares",
+    title: "6. Atividades Sociais e Familiares",
+    verse: "\"Mas, eu e a minha família serviremos ao Senhor\". Josué 24:15",
     items: [
-      { name: "Clube da Família", points: 200 },
-      { name: "Sempre Desbravador", points: 200 },
-      { name: "Visitação da diretoria aos membros do clube", points: 100 },
-      { name: "Projeto Especial do Ano Nisto Cremos", points: 300 },
+      {
+        name: "6A - Clube da Família",
+        points: 200,
+        detail: [
+          "Realizar pelo menos duas Reuniões de Pais no ano: 100 pts",
+          "Homenagem Dia dos Pais: 150 pts",
+          "Homenagem Dia das Mães: 100 pts",
+        ],
+      },
+      { name: "6B - SEMPRE DESBRAVADOR", points: 200 },
+      { name: "6C - Visitação da diretoria aos membros do clube", points: 100 },
+      { name: "6D - Projeto Especial do Ano - Nisto Cremos", points: 300 },
     ],
   },
-];
-
-export interface EventoDetalhado {
-  id: string;
-  title: string;
-  details: { label: string; value: string }[];
-  extra?: string[];
-}
-
-export const eventosDetalhados: EventoDetalhado[] = [
-  {
-    id: "pregador-mirim",
-    title: "Pregador Mirim",
-    details: [
-      { label: "Tema", value: "Sempre Desbravador" },
-      { label: "Formato", value: "Regional, distrito ou igreja local" },
-      { label: "Categorias", value: "10 a 12 anos e 13 a 15 anos" },
-      { label: "Inscrição", value: "20 e 21 de maio" },
-      { label: "Valor", value: "R$ 7,00 por participante" },
-    ],
-    extra: [
-      "Uniforme completo",
-      "Tempo de 5 a 8 minutos",
-      "Uso de texto bíblico",
-      "Boa dicção e ilustração",
-      "Coerência com o tema",
-      "Conclusão com apelo e postura",
-    ],
-  },
-  {
-    id: "louvor",
-    title: "Desbravadores em Louvor",
-    details: [
-      { label: "Tema", value: "Sempre Desbravador" },
-      { label: "Formato", value: "Regional, distrito ou igreja local" },
-      { label: "Inscrição", value: "17 a 19 de maio" },
-      { label: "Valor", value: "R$ 7,00 por participante" },
-    ],
-    extra: [
-      "Clube uniformizado",
-      "Música conhecida ou composição própria",
-      "Uso de playback ou instrumentos",
-      "Letra com princípios cristãos",
-    ],
-  },
-  {
-    id: "jcl",
-    title: "Jornada Clube do Livro",
-    details: [
-      { label: "Inscrição", value: "23 a 25 de junho" },
-      { label: "Fase 1 – Regional classificatória", value: "16 de agosto" },
-      { label: "Fase 2 – Regional classificatória", value: "20 de setembro" },
-      { label: "Semifinal", value: "15 de novembro" },
-      { label: "Final", value: "06 de dezembro" },
-    ],
-    extra: ["Livros por faixa etária conforme agenda oficial"],
-  },
-  {
-    id: "bom-de-biblia",
-    title: "Concurso Bom de Bíblia",
-    details: [
-      { label: "Formato", value: "Participação ativa no concurso promovido pela UCB/APV" },
-      { label: "Pontuação", value: "50 pontos por etapa em que o clube estiver participando" },
-    ],
-  },
-  {
-    id: "campori-lideres",
-    title: "III Campori de Líderes",
-    details: [
-      { label: "Categoria", value: "Líderes investidos e aspirantes a líder" },
-      { label: "Inscrição", value: "7 a 9 de julho" },
-      { label: "Valor", value: "R$ 270,00" },
-      { label: "Data do evento", value: "9 a 12 de outubro" },
-    ],
-  },
-  {
-    id: "desbravaday",
-    title: "Desbravaday",
-    details: [
-      { label: "Pontuação", value: "300 pts" },
-      { label: "09/08", value: "São José dos Campos / Lorena" },
-      { label: "16/08", value: "Litoral" },
-      { label: "30/08", value: "Guarulhos / Mogi" },
-    ],
-    extra: [
-      "Culto de abertura e apelo para batismo da primavera",
-      "Exposição de atividades e feira de desbravadores",
-      "Feira de especialidades e gincanas",
-      "Dinâmicas recreativas e festival de ordem unida",
-      "Cassori e outras ações conforme padrão MDA",
-    ],
-  },
-];
-
-export const nistoCremosTopics = [
-  "Batismo",
-  "Ceia do Senhor",
-  "Conduta Cristã",
-  "Crescimento em Cristo",
-  "Criação do Mundo",
-  "Deus Espírito Santo",
-  "Eu Irei",
-  "Deus Pai",
-  "Dom de Profecia",
-  "Dons e Ministérios Espirituais",
-  "Escrituras Sagradas",
-  "Experiência da Salvação",
-  "Grande Conflito",
-  "Igreja",
-  "Lei de Deus",
-  "Matrimônio e Família",
-  "Milênio e Fim do Pecado",
-  "Ministério de Cristo no Santuário Celestial",
-  "Mordomia",
-  "Morte e Ressurreição",
-  "Natureza da Humanidade",
-  "Nova Terra",
-  "Remanescente e sua Missão",
-  "Sábado",
-  "Segunda Vinda de Cristo",
-  "Trindade",
-  "Unidade no Corpo de Cristo",
-  "Vida, Morte e Ressurreição de Cristo",
 ];
 
 export const padraoPontuacao = [
   { faixa: "9.000 a 10.000 pontos", estrelas: 5 },
   { faixa: "7.000 a 8.999 pontos", estrelas: 4 },
   { faixa: "5.000 a 6.999 pontos", estrelas: 3 },
-  { faixa: "0 a 4.999 pontos", estrelas: 0 },
-];
-
-export const oscarCategories = [
-  "Clube que levar mais pessoas ao batismo",
-  "Clube que mais investir em atividades familiares",
-  "Clube que mais investir em classes do ano",
-  "Clube que mais investir em líderes",
-  "Clube que mais investir em classes não realizadas anteriormente",
-  "Secretaria mais organizada",
-  "Clube mais bem uniformizado",
-];
-
-export const excelenciaAreas = [
-  "Organização do Clube",
-  "Classes e Desenvolvimento",
-  "Sistema de Unidades",
-  "Evangelismo",
-  "Eventos",
-  "Atividades Sociais e Familiares",
+  { faixa: "0 a 4.999 pontos", estrelas: 0, label: "Participação" },
 ];
