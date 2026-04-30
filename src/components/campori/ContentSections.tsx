@@ -327,7 +327,7 @@ export function ContentSections() {
           rows={[
             ["C3", "Ano Bíblico – Atualizado até 30/06/26. ≥80% = 50pts; 50-79% = 25pts; <50% = 0pts.", "50"],
             ["C4", "Curso de Leitura – Livro CONTAGEM REGRESSIVA concluído até 30/07/2026 ≥80% = 100 pts; 50-79% = 50 pts; <50% = 0 pts.", "50"],
-            ["C5", "PG das Novas Gerações - Cada membro participar/liderar PG de março a 31/julho. Anexar foto.", "100"],
+            ["C5", "PG das Novas Gerações - Cada membro participar/liderar PG de 1 de maio a 31 de agosto de 2026. Anexar foto.", "100"],
             ["C6", "Visita a Desbravadores/Aventureiros – Escolher 3 Desbravadores/Aventureiros e visitar 2x cada (mai-jun e jul-set). Anexar lista.", "100"],
           ]}
         />
