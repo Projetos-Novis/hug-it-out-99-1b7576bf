@@ -32,6 +32,13 @@ export function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
+          <div className="flex justify-center mb-6">
+            <img 
+              src="https://rmetppilvfrxosvxzhgj.supabase.co/storage/v1/object/public/message-attachments/c3282a3e-4626-4299-be47-5fdd33267ae5/1777507634362_ghng91_de07f-logoiasd-preto2.png" 
+              alt="Logo IASD" 
+              className="h-10 sm:h-12 w-auto invert opacity-50 hover:opacity-80 transition-opacity"
+            />
+          </div>
           <p className="font-heading text-secondary font-bold text-xs sm:text-sm tracking-[0.2em] sm:tracking-[0.3em] uppercase mb-3 sm:mb-4">
             Associação Paulista do Vale
           </p>
