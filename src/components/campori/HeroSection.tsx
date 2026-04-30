@@ -17,7 +17,7 @@ export function HeroSection() {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-primary topo-pattern overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center bg-primary topo-pattern overflow-hidden pb-32 sm:pb-40 pt-20 sm:pt-24">
       {/* Decorative elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <Mountain className="absolute bottom-0 left-0 w-64 h-64 text-primary-foreground/5" />
