@@ -12,8 +12,7 @@ export interface Section {
 }
 
 export const sections: Section[] = [
-  { id: "hero", title: "De Líder para Líderes", icon: Heart },
-  { id: "filosofia", title: "Filosofia & Objetivo", icon: BookOpen },
+  { id: "filosofia", title: "Filosofia & Objetivo", icon: Heart },
   { id: "info-gerais", title: "Informações Gerais", icon: Compass },
   { id: "onibus", title: "Contratação de Ônibus", icon: Bus },
   { id: "codigo-disciplinar", title: "Código Disciplinar", icon: Shield },
@@ -34,4 +33,5 @@ export const sections: Section[] = [
   { id: "saude", title: "Saúde", icon: HeartPulse },
   { id: "outras-avaliacoes", title: "Outras Avaliações", icon: Star },
   { id: "checklist-datas", title: "Check-list de Datas", icon: CheckSquare },
+  { id: "intro", title: "De Líder para Líderes", icon: Heart },
 ];
