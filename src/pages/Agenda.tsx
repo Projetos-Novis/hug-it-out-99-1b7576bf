@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { ArrowLeft, Calendar, ClipboardCheck, Quote } from "lucide-react";
-import { calendarData, pontuacaoData } from "@/components/agenda/agendaData";
+import { ArrowLeft, Calendar } from "lucide-react";
+import { calendarData } from "@/components/agenda/agendaData";
 
 export default function Agenda() {
   return (
-    <div className="min-h-screen bg-background pb-20">
+    <div className="min-h-screen bg-background">
       {/* Header */}
       <header className="bg-primary text-primary-foreground">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 py-6 sm:py-10">
@@ -55,9 +55,8 @@ export default function Agenda() {
         </div>
       </header>
 
-      {/* Main Content */}
-      <main className="max-w-5xl mx-auto px-4 sm:px-6 py-8 space-y-12">
-        {/* Calendário Anual */}
+      {/* Calendário Anual */}
+      <main className="max-w-5xl mx-auto px-4 sm:px-6 py-8">
         <section id="calendario" className="scroll-mt-20">
           <div className="flex items-center gap-3 mb-6">
             <Calendar className="w-6 h-6 text-secondary shrink-0" />
@@ -68,7 +67,7 @@ export default function Agenda() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
             {calendarData.map((m) => (
-              <div key={m.month} className="bg-card border border-border rounded-xl p-4 shadow-sm">
+              <div key={m.month} className="bg-card border border-border rounded-xl p-4">
                 <h3 className="font-heading font-bold text-primary text-base mb-3 border-b border-border pb-2">{m.month}</h3>
                 <ul className="space-y-2">
                   {m.events.map((e, i) => (
@@ -79,64 +78,6 @@ export default function Agenda() {
                   ))}
                 </ul>
               </div>
-            ))}
-          </div>
-        </section>
-
-        {/* Critérios de Pontuação */}
-        <section id="pontuacao" className="scroll-mt-20">
-          <div className="flex items-center gap-3 mb-8">
-            <ClipboardCheck className="w-6 h-6 text-secondary shrink-0" />
-            <h2 className="font-heading font-bold text-xl sm:text-2xl text-primary">
-              Critérios de Pontuação
-            </h2>
-          </div>
-
-          <div className="space-y-8">
-            {pontuacaoData.map((category) => (
-              <motion.div 
-                key={category.id} 
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                className="bg-card border border-border rounded-2xl overflow-hidden shadow-sm"
-              >
-                <div className="bg-primary/5 p-5 border-b border-border">
-                  <h3 className="font-heading font-bold text-xl text-primary mb-2">{category.title}</h3>
-                  {category.verse && (
-                    <div className="flex gap-2 items-start text-muted-foreground italic text-sm">
-                      <Quote className="w-4 h-4 shrink-0 mt-0.5 opacity-50" />
-                      <p>{category.verse}</p>
-                    </div>
-                  )}
-                </div>
-                
-                <div className="divide-y divide-border">
-                  {category.items.map((item, idx) => (
-                    <div key={idx} className="p-5 hover:bg-muted/30 transition-colors">
-                      <div className="flex justify-between items-start gap-4 mb-2">
-                        <h4 className="font-heading font-bold text-foreground leading-snug">
-                          {item.name}
-                        </h4>
-                        <span className="bg-secondary/10 text-secondary font-heading font-bold px-3 py-1 rounded-full text-xs shrink-0">
-                          {item.points} pts
-                        </span>
-                      </div>
-                      
-                      {item.detail && (
-                        <ul className="mt-3 space-y-2">
-                          {item.detail.map((detail, dIdx) => (
-                            <li key={dIdx} className="text-sm text-muted-foreground flex gap-2">
-                              <span className="text-secondary font-bold">•</span>
-                              <span>{detail}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      )}
-                    </div>
-                  ))}
-                </div>
-              </motion.div>
             ))}
           </div>
         </section>
