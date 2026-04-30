@@ -36,12 +36,12 @@ export function HeroSection() {
             <img 
               src="https://rmetppilvfrxosvxzhgj.supabase.co/storage/v1/object/public/message-attachments/c3282a3e-4626-4299-be47-5fdd33267ae5/1777507787884_440qbn_imagem_emblema_a1.svg" 
               alt="Emblema A1" 
-              className="h-9 sm:h-13 w-auto opacity-60 hover:opacity-100 transition-opacity"
+              className="h-11 sm:h-16 w-auto opacity-60 hover:opacity-100 transition-opacity"
             />
             <div className="h-6 w-[1px] bg-primary-foreground/20" />
             <img 
-              src="https://rmetppilvfrxosvxzhgj.supabase.co/storage/v1/object/public/message-attachments/c3282a3e-4626-4299-be47-5fdd33267ae5/1777507634362_ghng91_de07f-logoiasd-preto2.png" 
-              alt="Logo IASD" 
+              src="https://rmetppilvfrxosvxzhgj.supabase.co/storage/v1/object/public/message-attachments/c3282a3e-4626-4299-be47-5fdd33267ae5/1777508266968_g7o8hl_circular.png" 
+              alt="Logo Circular" 
               className="h-10 sm:h-14 w-auto opacity-60 hover:opacity-100 transition-opacity"
             />
             <div className="h-6 w-[1px] bg-primary-foreground/20" />
