@@ -18,13 +18,13 @@
     --primary: 218 50% 17%;
     --primary-foreground: 40 40% 96%;
 
-    --secondary: 25 70% 51%;
+    --secondary: 46 65% 52%;
     --secondary-foreground: 40 40% 96%;
 
     --muted: 40 25% 88%;
     --muted-foreground: 218 25% 35%;
 
-    --accent: 25 70% 51%;
+    --accent: 46 65% 52%;
     --accent-foreground: 40 40% 96%;
 
     --destructive: 0 72% 50%;
@@ -38,7 +38,7 @@
 
     --campori-forest: 218 50% 17%;
     --campori-forest-light: 218 40% 32%;
-    --campori-earth: 25 70% 51%;
+    --campori-earth: 46 65% 52%;
     --campori-earth-dark: 22 60% 35%;
     --campori-sand: 40 40% 90%;
     --campori-cream: 40 40% 96%;
@@ -48,12 +48,12 @@
 
     --sidebar-background: 218 50% 14%;
     --sidebar-foreground: 40 40% 92%;
-    --sidebar-primary: 25 70% 51%;
+    --sidebar-primary: 46 65% 52%;
     --sidebar-primary-foreground: 40 40% 96%;
     --sidebar-accent: 218 45% 20%;
     --sidebar-accent-foreground: 40 40% 92%;
     --sidebar-border: 218 35% 25%;
-    --sidebar-ring: 25 70% 51%;
+    --sidebar-ring: 46 65% 52%;
   }
 }
 
