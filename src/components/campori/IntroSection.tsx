@@ -16,19 +16,31 @@ export function IntroSection() {
               <Heart className="w-6 h-6" />
             </div>
             <h2 className="font-heading text-xl sm:text-2xl md:text-3xl font-bold text-secondary">
-              DE LÍDER PARA LÍDERES
+              MENSAGEM DO LÍDER
             </h2>
           </div>
           <div className="prose-campori space-y-4 text-sm sm:text-base leading-relaxed text-foreground/85">
             <p>
-              Olá, Coordenadores, Regionais e Diretores da MDA, este é um ano muito esperado, pois nele, acontecerá o <strong className="text-primary">III Campori de Líderes de Desbravadores e Aventureiros</strong> da Associação Paulista do Vale, no Catre, na cidade de Analândia - SP.
+              Olá líderes e aspirantes à liderança de Desbravadores e Aventureiros da Associação Paulista do Vale, chegou o momento de atender a um chamado que vai além de um evento — é um convite para uma experiência que pode transformar sua caminhada com Deus e o seu ministério. Este é um ano aguardado com grande expectativa, pois viveremos juntos o <strong className="text-primary">III Campori de Líderes de Desbravadores e Aventureiros da APV</strong>, que acontecerá no <strong>CATRE</strong>, em Analândia/SP. Um encontro preparado para marcar vidas, fortalecer propósitos e reafirmar o compromisso de cada líder com a missão.
             </p>
             <p>
-              Pela primeira vez, este Campori será por Regiões, nosso objetivo é envolver os membros aspirantes deste campo em companheirismo e ações práticas da formação de cada indivíduo. O tema para este grande encontro de celebração será <strong className="text-secondary font-heading">ÍNTEGROS</strong>. Pois, os líderes já investidos e aspirantes a líderes da MDA, em cada momento, são desafiados por Deus a terem uma liderança ÍNTEGRA. E isso só é possível, através do estudo da <strong>PALAVRA</strong>, vivendo em <strong>RELACIONAMENTO</strong> uns com os outros e tendo uma vida de <strong>ORAÇÃO</strong>.
+              Pela primeira vez, o Campori será realizado por regiões, criando uma oportunidade única de fortalecer vínculos, desenvolver a liderança local e promover ações práticas que contribuam diretamente para a formação de cada participante. O tema que guiará essa jornada é claro e desafiador: <strong className="text-secondary font-heading">ÍNTEGROS</strong>. Deus nos chama para uma liderança que vai além de cargos ou funções — Ele nos chama para uma vida de integridade. Ser íntegro é alinhar caráter e prática, é viver fiel à Palavra mesmo diante dos desafios, é representar Cristo com coerência em cada decisão.
             </p>
             <p>
-              Este ano, você e a sua Região tem o <strong className="text-primary">DESAFIO</strong> de testemunhar do amor de Jesus em sua cidade, igreja e Clube, no cumprimento dos pré-requisitos e, no final, juntos com todas as regiões da APV, celebraremos grandes conquistas no III Campori de Líderes de Desbravadores e Aventureiros. Um bom desafio para você!
+              Como líderes e aspirantes, somos convidados a dar o nosso melhor, não por reconhecimento humano, mas porque entendemos o valor do ministério que recebemos. Essa integridade se constrói diariamente, sustentada por três fundamentos indispensáveis:
             </p>
+            <ul className="list-disc pl-5 space-y-2">
+              <li><strong className="text-primary">Palavra:</strong> quando permitimos que a Bíblia molde nossas escolhas e direcione nossa vida;</li>
+              <li><strong className="text-primary">Relacionamento:</strong> quando cultivamos comunhão genuína com Deus e com as pessoas;</li>
+              <li><strong className="text-primary">Oração:</strong> quando reconhecemos nossa total dependência do Senhor em cada passo.</li>
+            </ul>
+            <p>
+              Todos os dias somos desafiados a testemunhar do amor de Jesus de forma intencional em casa, no trabalho, na igreja e até mesmo no clube, por isso cada requisito cumprido, cada ação realizada e cada esforço dedicado fazem parte de algo maior — a formação de líderes comprometidos com a missão e preparados para servir com excelência.
+            </p>
+            <p>
+              O desafio está diante de você. <strong className="text-primary">Viva com propósito. Lidere com integridade.</strong> E responda a esse chamado dando o seu melhor para Deus e para o ministério.
+            </p>
+
           </div>
         </div>
       </motion.div>
