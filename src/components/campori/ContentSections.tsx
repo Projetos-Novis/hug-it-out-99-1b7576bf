@@ -97,19 +97,27 @@ export function ContentSections() {
 
       {/* PARTICIPAÇÃO DA REGIÃO */}
       <SectionCard id="participacao-regiao" title="Como a Região Participa" icon={sections[4].icon}>
+        <p className="mb-3 text-foreground/90">
+          O <strong>III Campori de Líderes da APV</strong> funcionará na modalidade de <strong>Clubão</strong>, em que cada região será organizada como um <strong>Clube Regional</strong>.
+        </p>
         <AlertBox type="warning" title="Mínimo obrigatório">
-          A Região deve inscrever no <strong>mínimo 25 pessoas pagantes, não incluso apoio</strong>, para participar com seu nome representado.
+          Cada região deverá inscrever, no mínimo, <strong>25 pessoas pagantes</strong> — não incluindo a equipe de apoio — para confirmar sua participação como Clube Regional e, assim, ter direito ao <strong>troféu do Campori</strong>.
         </AlertBox>
         <p className="mb-3 text-foreground/90">
-          Cada região funcionará como um clube regional e terá direito ao troféu do Campori. Caso a região não alcance a quantidade mínima de inscritos, poderá se juntar a outra região.
+          Caso a região não alcance a quantidade mínima de inscritos, poderá se unir a outra região.
         </p>
-        <p className="mb-3 text-foreground/90">Cada Região deve ter pelo menos: um(a) Secretário(a) e Tesoureiro(a).</p>
+        <p className="mb-2 text-foreground/90">Cada região deverá contar com, pelo menos:</p>
+        <ul className="list-disc pl-5 space-y-1 mb-4 text-foreground/90">
+          <li>1 Secretário(a);</li>
+          <li>1 Tesoureiro(a).</li>
+        </ul>
         <h3 className="font-heading font-bold text-base text-primary mb-2">Requisitos para os cargos:</h3>
         <ul className="list-disc pl-5 space-y-1 text-foreground/90">
-          <li>Maiores de idade;</li>
-          <li>Matriculados e que frequentem ativamente um clube da MDA da sua região;</li>
-          <li>Membros batizados na IASD com carta de recomendação da igreja.</li>
+          <li>Ser maior de idade;</li>
+          <li>Estar matriculado(a) e frequentar ativamente um clube da MDA da sua região;</li>
+          <li>Ser membro batizado da IASD, com carta de recomendação da igreja.</li>
         </ul>
+
       </SectionCard>
 
       {/* PARTICIPAÇÃO DO LÍDER */}
