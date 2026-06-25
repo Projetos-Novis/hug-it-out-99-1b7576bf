@@ -5,7 +5,7 @@ import { calendarData } from "@/components/agenda/agendaData";
 import { agendaSections, padraoData, premiacoesData } from "@/components/agenda/agendaContent";
 import anexosQrCode from "@/assets/anexos-qrcode.png";
 import emblemaA1 from "@/assets/emblema-a1.svg.asset.json";
-import logoIasd from "@/assets/logo-iasd.png.asset.json";
+import logoIasd from "@/assets/adventist-symbol.svg.asset.json";
 import logoDesbravadores from "@/assets/logo-desbravadores.png.asset.json";
 
 export default function Agenda() {

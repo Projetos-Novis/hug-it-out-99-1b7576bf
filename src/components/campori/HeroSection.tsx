@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { generatePDF, type PdfMode } from "./pdfGenerator";
 import emblemaA1 from "@/assets/emblema-a1.svg.asset.json";
-import logoIasd from "@/assets/logo-iasd.png.asset.json";
+import logoIasd from "@/assets/adventist-symbol.svg.asset.json";
 import logoDesbravadores from "@/assets/logo-desbravadores.png.asset.json";
 
 export function HeroSection() {
