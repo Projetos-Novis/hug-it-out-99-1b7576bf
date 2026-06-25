@@ -45,7 +45,7 @@ export function ContentSections() {
           ))}
         </div>
         <p className="text-foreground/90 mb-3">
-          <strong>Participantes elegíveis:</strong> Aspirantes cursando o 3º Módulo do Curso de Líder e liderança matriculada e ativa em um dos clubes de Desbravadores da APV que tenham, a partir de 16 anos, com data de corte de 30/06/2026. Incluindo Líderes investidos (L, LM, LMA), Aspirantes, Coordenadores, Regionais, Equipe de Apoio e Convidados.
+          <strong>Participantes elegíveis:</strong> Poderão participar do III Campori de Líderes da APV: líderes investidos (L, LM, LMA), aspirantes a líderes matriculados em um dos módulos do curso de liderança da Associação Paulista do Vale, mesmo que ainda estejam fazendo a classe de agrupadas, e convidados, membros regulares da APV que já tenham sido investidos nas classes de L, LM ou LMA e que não estejam ativos no Clube de Desbravadores e/ou Clube de Aventureiros.
         </p>
         <AlertBox type="info" title="Chegada antecipada">
           Os participantes poderão chegar a partir do dia 09/10/2026 às 06:00h, para montagens de acampamento e construção de portais.
@@ -98,8 +98,11 @@ export function ContentSections() {
       {/* PARTICIPAÇÃO DA REGIÃO */}
       <SectionCard id="participacao-regiao" title="Como a Região Participa" icon={sections[4].icon}>
         <AlertBox type="warning" title="Mínimo obrigatório">
-          A Região deve inscrever no mínimo <strong>20 pessoas pagantes</strong> (não inclui apoio) para participar com seu nome representado.
+          A Região deve inscrever no <strong>mínimo 25 pessoas pagantes, não incluso apoio</strong>, para participar com seu nome representado.
         </AlertBox>
+        <p className="mb-3 text-foreground/90">
+          Cada região funcionará como um clube regional e terá direito ao troféu do Campori. Caso a região não alcance a quantidade mínima de inscritos, poderá se juntar a outra região.
+        </p>
         <p className="mb-3 text-foreground/90">Cada Região deve ter pelo menos: um(a) Secretário(a) e Tesoureiro(a).</p>
         <h3 className="font-heading font-bold text-base text-primary mb-2">Requisitos para os cargos:</h3>
         <ul className="list-disc pl-5 space-y-1 text-foreground/90">
@@ -117,6 +120,9 @@ export function ContentSections() {
           <li>Possuir 16 anos completos até 30/06/2026;</li>
           <li>Ser membro ativo em um dos Clubes da MDA na APV.</li>
         </ul>
+        <p className="mt-3 text-foreground/90">
+          <strong>Convidados</strong> que tenham sido investidos nas classes de L, LM ou LMA, mas estejam inativos no SGC, devem ser membros regulares ativos no ACMS, sistema de secretaria da IASD, na APV.
+        </p>
       </SectionCard>
 
       {/* SEGURO */}
@@ -140,25 +146,27 @@ export function ContentSections() {
         <div className="grid sm:grid-cols-2 gap-4 mb-4">
           <div className="bg-campori-amber/10 border border-campori-amber/30 rounded-lg p-4">
             <p className="font-heading font-bold text-xs uppercase tracking-wide text-campori-earth-dark">Valor</p>
-            <p className="font-heading font-bold text-xl text-foreground">R$ 270,00</p>
+            <p className="font-heading font-bold text-xl text-foreground">R$ 280,00</p>
           </div>
           <div className="bg-campori-amber/10 border border-campori-amber/30 rounded-lg p-4">
             <p className="font-heading font-bold text-xs uppercase tracking-wide text-campori-earth-dark">Data da Inscrição</p>
-            <p className="font-heading font-bold text-xl text-foreground">07 a 09 de julho de 2026</p>
-            <p className="text-xs text-muted-foreground">Duração: apenas 3 dias</p>
+            <p className="font-heading font-bold text-xl text-foreground">13 a 17 de julho de 2026</p>
           </div>
         </div>
 
+        <p className="text-foreground/90 mb-2">A inscrição será feita pelo diretor do Clube local via SGC.</p>
         <h3 className="font-heading font-bold text-base text-primary mb-2">Passos para a inscrição:</h3>
         <ol className="list-decimal pl-5 space-y-1 text-foreground/90 mb-4">
           <li>Acesse o sistema: <strong>https://sg.sdasystems.org</strong></li>
           <li>Entre com suas credenciais;</li>
           <li>Vá até o módulo <strong>INSCRIÇÕES</strong>;</li>
           <li>Procure: "III Campori de Líderes de Desbravadores e Aventureiros - APV";</li>
-          <li>Insira todos os membros da Região;</li>
-          <li>Gere os links e encaminhe para cada um pagar;</li>
-          <li>Pagamento: PIX, Débito ou Crédito (até 3x).</li>
+          <li>Insira todos os membros do Clube;</li>
+          <li>Gere o boleto de pagamento.</li>
         </ol>
+        <p className="text-foreground/90 mb-4">
+          <strong>Obs.:</strong> Para parcelamento no Cartão de Crédito, em até 5 vezes, solicitar link de pagamento ao departamento MDA da APV.
+        </p>
 
         <AlertBox type="info" title="Pré-requisitos para inscrição">
           O participante já deverá estar incluído no Seguro Anual ARM, com ficha médica atualizada e termo de adesão assinado (feito pela secretaria do Clube). Após gerar o link, tem 24h para concluir o pagamento.
@@ -170,7 +178,7 @@ export function ContentSections() {
 
         <h3 className="font-heading font-bold text-base text-primary mt-4 mb-2">Troca de Nomes</h3>
         <p className="text-foreground/90">
-          Trocas disponíveis somente entre <strong>01 a 20 de setembro de 2026</strong>, e apenas de nomes de uma mesma Região já inscrita. Após essa data, nenhuma troca será permitida.
+          Trocas disponíveis somente entre <strong>01 a 20 de agosto de 2026</strong>, e apenas de nomes de uma mesma Região já inscrita. Após essa data, nenhuma troca será permitida.
         </p>
       </SectionCard>
 
@@ -181,7 +189,7 @@ export function ContentSections() {
           <li><strong className="text-primary">Pastor Distrital:</strong> Inscrição feita diretamente no MDA-APV.</li>
           <li><strong className="text-primary">Família Pastoral:</strong> Esposa e filhos (16+ anos), membros ativos de Clube da MDA, pagam valor integral.</li>
           <li><strong className="text-primary">Filhos de Pastores &lt;16 anos:</strong> Não poderão participar.</li>
-          <li><strong className="text-primary">Cozinheiras:</strong> Até 2 isentas por Região. A partir da 3ª, paga valor integral. Devem ser adventistas, 18+ anos, incluídas no Seguro Anual 2026 de um da MDA.</li>
+          <li><strong className="text-primary">Cozinheiras:</strong> até 2 isentas por Região. A partir da 3ª, paga valor integral. Devem ser adventistas, 18+ anos, incluídas no Seguro Anual 2026.</li>
         </ul>
       </SectionCard>
 
@@ -496,9 +504,9 @@ export function ContentSections() {
             { date: "30/05/2026", task: "Enviar Planejamento Anual da Região (A1)", tag: "" },
             { date: "30/06/2026", task: "Data de corte – Idade mínima 16 anos", tag: "Inscrição" },
             { date: "30/06/2026", task: "Ano Bíblico atualizado (C3)", tag: "" },
-            { date: "07-09/07/2026", task: "Período de inscrições (apenas 3 dias!)", tag: "Inscrição" },
+            { date: "13-17/07/2026", task: "Período de inscrições", tag: "Inscrição" },
             { date: "15/07/2026", task: "Secretaria On-Line no SGC (A2)", tag: "" },
-            { date: "01-20/09/2026", task: "Troca de nomes dos inscritos", tag: "Inscrição" },
+            { date: "01-20/08/2026", task: "Troca de nomes dos inscritos", tag: "Inscrição" },
             { date: "30/07/2026", task: "Conclusão do Curso de Leitura – livro CONTAGEM REGRESSIVA (C4)", tag: "" },
             { date: "", task: "", tag: "" },
             { date: "05/10/2026", task: "Suporte a Clubes concluído (T8)", tag: "" },

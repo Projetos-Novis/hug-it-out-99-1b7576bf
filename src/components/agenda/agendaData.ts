@@ -54,7 +54,7 @@ export const calendarData: CalendarMonth[] = [
   },
   {
     month: "Julho",
-    events: [{ date: "7 a 9", title: "Inscrição III Campori de Líderes de Desbravadores e Aventureiros - APV" }],
+    events: [{ date: "13 a 17", title: "Inscrição III Campori de Líderes de Desbravadores e Aventureiros - APV" }],
   },
   {
     month: "Agosto",
@@ -272,8 +272,8 @@ export const eventosDetalhados: EventoDetalhado[] = [
     title: "III Campori de Líderes",
     details: [
       { label: "Categoria", value: "Líderes investidos e aspirantes a líder" },
-      { label: "Inscrição", value: "7 a 9 de julho" },
-      { label: "Valor", value: "R$ 270,00" },
+      { label: "Inscrição", value: "13 a 17 de julho" },
+      { label: "Valor", value: "R$ 280,00" },
       { label: "Data do evento", value: "9 a 12 de outubro" },
     ],
   },

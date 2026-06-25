@@ -320,8 +320,8 @@ export const agendaSections: AgendaSection[] = [
         points: "400 pts",
         details: [
           "CATEGORIA: Líderes investidos e aspirantes a Líder.",
-          "INSCRIÇÃO: De 7 a 9 de Julho",
-          "VALOR: R$ 270,00",
+          "INSCRIÇÃO: De 13 a 17 de Julho",
+          "VALOR: R$ 280,00",
           "DATA: 09 a 12 de Outubro",
         ],
       },
