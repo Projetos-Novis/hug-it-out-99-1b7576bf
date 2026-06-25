@@ -3,10 +3,10 @@ import { ChevronDown, Compass, Monitor, Mountain, Smartphone, TreePine, Calendar
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { generatePDF, type PdfMode } from "./pdfGenerator";
-import emblemaA1 from "@/assets/emblema-a1.svg.asset.json";
-import logoIasd from "@/assets/adventist-symbol.svg.asset.json";
-import logoDesbravadores from "@/assets/logo-desbravadores.png.asset.json";
-import logoIntegros from "@/assets/logo-integros.png.asset.json";
+import emblemaA1 from "@/assets/emblema-a1.svg";
+import logoIasd from "@/assets/adventist-symbol.svg";
+import logoDesbravadores from "@/assets/logo-desbravadores.png";
+import logoIntegros from "@/assets/logo-integros.png";
 
 export function HeroSection() {
   const [generating, setGenerating] = useState<PdfMode | null>(null);
@@ -51,26 +51,26 @@ export function HeroSection() {
             className="flex justify-center mb-6 sm:mb-8"
           >
             <img
-              src={logoIntegros.url}
+              src={logoIntegros}
               alt="Íntegros - III Campori de Líderes APV"
               className="h-32 sm:h-44 md:h-56 lg:h-64 w-auto object-contain drop-shadow-2xl"
             />
           </motion.div>
           <div className="flex items-center justify-center gap-4 sm:gap-6 mb-8 sm:mb-10">
             <img
-              src={emblemaA1.url}
+              src={emblemaA1}
               alt="Emblema A1"
               className="h-12 sm:h-16 w-auto object-contain opacity-90"
             />
             <div className="h-8 w-[1px] bg-primary-foreground/20" />
             <img
-              src={logoIasd.url}
+              src={logoIasd}
               alt="Igreja Adventista do Sétimo Dia"
               className="h-12 sm:h-16 w-auto object-contain opacity-90"
             />
             <div className="h-8 w-[1px] bg-primary-foreground/20" />
             <img
-              src={logoDesbravadores.url}
+              src={logoDesbravadores}
               alt="Desbravadores"
               className="h-12 sm:h-16 w-auto object-contain opacity-90"
             />
