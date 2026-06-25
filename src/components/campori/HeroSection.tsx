@@ -3,6 +3,9 @@ import { ChevronDown, Compass, Monitor, Mountain, Smartphone, TreePine, Calendar
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { generatePDF, type PdfMode } from "./pdfGenerator";
+import emblemaA1 from "@/assets/emblema-a1.svg.asset.json";
+import logoIasd from "@/assets/logo-iasd.png.asset.json";
+import logoDesbravadores from "@/assets/logo-desbravadores.png.asset.json";
 
 export function HeroSection() {
   const [generating, setGenerating] = useState<PdfMode | null>(null);
@@ -33,22 +36,22 @@ export function HeroSection() {
           transition={{ duration: 0.8 }}
         >
           <div className="flex items-center justify-center gap-4 sm:gap-6 mb-8 sm:mb-10">
-            <img 
-              src="https://rmetppilvfrxosvxzhgj.supabase.co/storage/v1/object/public/message-attachments/c3282a3e-4626-4299-be47-5fdd33267ae5/1777507787884_440qbn_imagem_emblema_a1.svg" 
-              alt="Emblema A1" 
-              className="h-11 sm:h-16 w-auto opacity-60 hover:opacity-100 transition-opacity"
+            <img
+              src={emblemaA1.url}
+              alt="Emblema A1"
+              className="h-12 sm:h-16 w-auto object-contain opacity-90"
             />
-            <div className="h-6 w-[1px] bg-primary-foreground/20" />
-            <img 
-              src="https://rmetppilvfrxosvxzhgj.supabase.co/storage/v1/object/public/message-attachments/c3282a3e-4626-4299-be47-5fdd33267ae5/1777508266968_g7o8hl_circular.png" 
-              alt="Logo Circular" 
-              className="h-10 sm:h-14 w-auto opacity-60 hover:opacity-100 transition-opacity"
+            <div className="h-8 w-[1px] bg-primary-foreground/20" />
+            <img
+              src={logoIasd.url}
+              alt="Igreja Adventista do Sétimo Dia"
+              className="h-12 sm:h-16 w-auto object-contain opacity-90"
             />
-            <div className="h-6 w-[1px] bg-primary-foreground/20" />
-            <img 
-              src="https://rmetppilvfrxosvxzhgj.supabase.co/storage/v1/object/public/message-attachments/c3282a3e-4626-4299-be47-5fdd33267ae5/1777507740748_jehh4y_D3.png" 
-              alt="Logo Desbravadores" 
-              className="h-10 sm:h-14 w-auto opacity-60 hover:opacity-100 transition-opacity"
+            <div className="h-8 w-[1px] bg-primary-foreground/20" />
+            <img
+              src={logoDesbravadores.url}
+              alt="Desbravadores"
+              className="h-12 sm:h-16 w-auto object-contain opacity-90"
             />
           </div>
           <p className="font-heading text-secondary font-bold text-xs sm:text-sm tracking-[0.2em] sm:tracking-[0.3em] uppercase mb-3 sm:mb-4">
