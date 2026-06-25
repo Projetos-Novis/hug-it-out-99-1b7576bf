@@ -4,9 +4,9 @@ import { ArrowLeft, Calendar, ListChecks, Award, FileText } from "lucide-react";
 import { calendarData } from "@/components/agenda/agendaData";
 import { agendaSections, padraoData, premiacoesData } from "@/components/agenda/agendaContent";
 import anexosQrCode from "@/assets/anexos-qrcode.png";
-import emblemaA1 from "@/assets/emblema-a1.svg.asset.json";
-import logoIasd from "@/assets/adventist-symbol.svg.asset.json";
-import logoDesbravadores from "@/assets/logo-desbravadores.png.asset.json";
+import emblemaA1 from "@/assets/emblema-a1.svg";
+import logoIasd from "@/assets/adventist-symbol.svg";
+import logoDesbravadores from "@/assets/logo-desbravadores.png";
 
 export default function Agenda() {
   return (
@@ -39,19 +39,19 @@ export default function Agenda() {
               className="flex items-center gap-3 sm:gap-4 shrink-0"
             >
               <img
-                src={emblemaA1.url}
+                src={emblemaA1}
                 alt="Emblema A1"
                 className="h-12 sm:h-14 w-auto object-contain opacity-90"
               />
               <div className="h-6 w-[1px] bg-primary-foreground/20" />
               <img
-                src={logoIasd.url}
+                src={logoIasd}
                 alt="Igreja Adventista do Sétimo Dia"
                 className="h-12 sm:h-14 w-auto object-contain opacity-90"
               />
               <div className="h-6 w-[1px] bg-primary-foreground/20" />
               <img
-                src={logoDesbravadores.url}
+                src={logoDesbravadores}
                 alt="Desbravadores"
                 className="h-12 sm:h-14 w-auto object-contain opacity-90"
               />
