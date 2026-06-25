@@ -4,6 +4,9 @@ import { ArrowLeft, Calendar, ListChecks, Award, FileText } from "lucide-react";
 import { calendarData } from "@/components/agenda/agendaData";
 import { agendaSections, padraoData, premiacoesData } from "@/components/agenda/agendaContent";
 import anexosQrCode from "@/assets/anexos-qrcode.png";
+import emblemaA1 from "@/assets/emblema-a1.svg.asset.json";
+import logoIasd from "@/assets/logo-iasd.png.asset.json";
+import logoDesbravadores from "@/assets/logo-desbravadores.png.asset.json";
 
 export default function Agenda() {
   return (
@@ -36,21 +39,21 @@ export default function Agenda() {
               className="flex items-center gap-3 sm:gap-4 shrink-0"
             >
               <img
-                src="https://rmetppilvfrxosvxzhgj.supabase.co/storage/v1/object/public/message-attachments/c3282a3e-4626-4299-be47-5fdd33267ae5/1777507787884_440qbn_imagem_emblema_a1.svg"
+                src={emblemaA1.url}
                 alt="Emblema A1"
-                className="h-11 sm:h-14 w-auto opacity-70"
+                className="h-12 sm:h-14 w-auto object-contain opacity-90"
               />
               <div className="h-6 w-[1px] bg-primary-foreground/20" />
               <img
-                src="https://rmetppilvfrxosvxzhgj.supabase.co/storage/v1/object/public/message-attachments/c3282a3e-4626-4299-be47-5fdd33267ae5/1777508266968_g7o8hl_circular.png"
-                alt="Logo Circular"
-                className="h-10 sm:h-12 w-auto opacity-70"
+                src={logoIasd.url}
+                alt="Igreja Adventista do Sétimo Dia"
+                className="h-12 sm:h-14 w-auto object-contain opacity-90"
               />
               <div className="h-6 w-[1px] bg-primary-foreground/20" />
               <img
-                src="https://rmetppilvfrxosvxzhgj.supabase.co/storage/v1/object/public/message-attachments/c3282a3e-4626-4299-be47-5fdd33267ae5/1777507740748_jehh4y_D3.png"
-                alt="Logo Desbravadores"
-                className="h-10 sm:h-12 w-auto opacity-70"
+                src={logoDesbravadores.url}
+                alt="Desbravadores"
+                className="h-12 sm:h-14 w-auto object-contain opacity-90"
               />
             </motion.div>
           </div>
