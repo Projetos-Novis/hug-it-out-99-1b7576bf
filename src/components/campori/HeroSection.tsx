@@ -6,6 +6,7 @@ import { generatePDF, type PdfMode } from "./pdfGenerator";
 import emblemaA1 from "@/assets/emblema-a1.svg.asset.json";
 import logoIasd from "@/assets/adventist-symbol.svg.asset.json";
 import logoDesbravadores from "@/assets/logo-desbravadores.png.asset.json";
+import logoIntegros from "@/assets/logo-integros.png.asset.json";
 
 export function HeroSection() {
   const [generating, setGenerating] = useState<PdfMode | null>(null);
@@ -35,6 +36,26 @@ export function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{
+              opacity: 1,
+              scale: 1,
+              y: [0, -12, 0],
+            }}
+            transition={{
+              opacity: { duration: 0.8 },
+              scale: { duration: 0.8 },
+              y: { duration: 4, repeat: Infinity, ease: "easeInOut" },
+            }}
+            className="flex justify-center mb-6 sm:mb-8"
+          >
+            <img
+              src={logoIntegros.url}
+              alt="Íntegros - III Campori de Líderes APV"
+              className="h-32 sm:h-44 md:h-56 lg:h-64 w-auto object-contain drop-shadow-2xl"
+            />
+          </motion.div>
           <div className="flex items-center justify-center gap-4 sm:gap-6 mb-8 sm:mb-10">
             <img
               src={emblemaA1.url}
