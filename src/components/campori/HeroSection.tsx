@@ -3,6 +3,9 @@ import { ChevronDown, Compass, Monitor, Mountain, Smartphone, TreePine, Calendar
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { generatePDF, type PdfMode } from "./pdfGenerator";
+import emblemaA1 from "@/assets/emblema-a1.svg.asset.json";
+import logoIasd from "@/assets/logo-iasd.png.asset.json";
+import logoDesbravadores from "@/assets/logo-desbravadores.png.asset.json";
 
 export function HeroSection() {
   const [generating, setGenerating] = useState<PdfMode | null>(null);
