@@ -110,7 +110,7 @@ html {
 
   body {
     background: white !important;
-    color: #1a3a2a !important;
+    color: #16243f !important;
     overflow: visible !important;
   }
 
@@ -228,7 +228,7 @@ html {
   }
 
   th {
-    background: #1a5c3a !important;
+    background: #16243f !important;
     color: white !important;
     padding: 6px 8px !important;
     font-size: 9pt !important;
@@ -260,7 +260,7 @@ html {
 
   /* Links */
   a {
-    color: #1a5c3a !important;
+    color: #16243f !important;
     text-decoration: none !important;
   }
 
